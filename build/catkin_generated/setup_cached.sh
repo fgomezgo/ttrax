@@ -7,8 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/fgg/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/usr/local/cuda-9.0/lib64"
 export PWD="/home/fgg/catkin_ws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/fgg/catkin_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/fgg/catkin_ws/src:$ROS_PACKAGE_PATH"
