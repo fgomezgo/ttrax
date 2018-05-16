@@ -1,0 +1,10 @@
+digraph G {
+"zed_left_camera" -> "zed_depth_camera"[label="Broadcaster: /zed/zed_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1526488435.560 sec old)\nBuffer length: 0.000 sec\n"];
+"zed_center" -> "zed_left_camera"[label="Broadcaster: /zed/zed_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1526488435.560 sec old)\nBuffer length: 0.000 sec\n"];
+"map" -> "zed_center"[label="Broadcaster: /zed/zed_wrapper_node\nAverage rate: 60.224 Hz\nMost recent transform: 1526488435.555 ( 0.006 sec old)\nBuffer length: 4.981 sec\n"];
+"zed_center" -> "zed_right_camera"[label="Broadcaster: /zed/zed_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1526488435.560 sec old)\nBuffer length: 0.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1526488435.560"[ shape=plaintext ] ;
+ }->"map";
+}
