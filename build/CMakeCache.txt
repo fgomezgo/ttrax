@@ -20,6 +20,33 @@ BOOST_THREAD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpthread.so
 //Build shared libraries (DLLs).
 BUILD_SHARED_LIBS:BOOL=ON
 
+//Path to a library.
+BULLET_COLLISION_LIBRARY:FILEPATH=BULLET_COLLISION_LIBRARY-NOTFOUND
+
+//Path to a library.
+BULLET_COLLISION_LIBRARY_DEBUG:FILEPATH=BULLET_COLLISION_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+BULLET_DYNAMICS_LIBRARY:FILEPATH=BULLET_DYNAMICS_LIBRARY-NOTFOUND
+
+//Path to a library.
+BULLET_DYNAMICS_LIBRARY_DEBUG:FILEPATH=BULLET_DYNAMICS_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a file.
+BULLET_INCLUDE_DIR:PATH=BULLET_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+BULLET_MATH_LIBRARY:FILEPATH=BULLET_MATH_LIBRARY-NOTFOUND
+
+//Path to a library.
+BULLET_MATH_LIBRARY_DEBUG:FILEPATH=BULLET_MATH_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+BULLET_SOFTBODY_LIBRARY:FILEPATH=BULLET_SOFTBODY_LIBRARY-NOTFOUND
+
+//Path to a library.
+BULLET_SOFTBODY_LIBRARY_DEBUG:FILEPATH=BULLET_SOFTBODY_LIBRARY_DEBUG-NOTFOUND
+
 //Boost atomic library (debug)
 Boost_ATOMIC_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_atomic.so
 
@@ -821,7 +848,13 @@ image_geometry_DIR:PATH=/opt/ros/kinetic/share/image_geometry/cmake
 image_transport_DIR:PATH=/opt/ros/kinetic/share/image_transport/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libbondcpp.so
+lib:FILEPATH=/opt/ros/kinetic/lib/libtf2.so
+
+//Value Computed by CMake
+map_server_BINARY_DIR:STATIC=/home/fgg/catkin_ws/build/navigation/map_server
+
+//Value Computed by CMake
+map_server_SOURCE_DIR:STATIC=/home/fgg/catkin_ws/src/navigation/map_server
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
@@ -876,6 +909,12 @@ nav2d_tutorials_SOURCE_DIR:STATIC=/home/fgg/catkin_ws/src/navigation_2d/nav2d_tu
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/kinetic/share/nav_msgs/cmake
+
+//Value Computed by CMake
+navigation_BINARY_DIR:STATIC=/home/fgg/catkin_ws/build/navigation/navigation
+
+//Value Computed by CMake
+navigation_SOURCE_DIR:STATIC=/home/fgg/catkin_ws/src/navigation/navigation
 
 //The directory containing a CMake configuration file for nodelet.
 nodelet_DIR:PATH=/opt/ros/kinetic/share/nodelet/cmake
@@ -963,6 +1002,22 @@ zed_wrapper_SOURCE_DIR:STATIC=/home/fgg/catkin_ws/src/zed-ros-wrapper
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: BULLET_COLLISION_LIBRARY
+BULLET_COLLISION_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BULLET_COLLISION_LIBRARY_DEBUG
+BULLET_COLLISION_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BULLET_DYNAMICS_LIBRARY
+BULLET_DYNAMICS_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BULLET_DYNAMICS_LIBRARY_DEBUG
+BULLET_DYNAMICS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BULLET_MATH_LIBRARY
+BULLET_MATH_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BULLET_MATH_LIBRARY_DEBUG
+BULLET_MATH_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BULLET_SOFTBODY_LIBRARY
+BULLET_SOFTBODY_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BULLET_SOFTBODY_LIBRARY_DEBUG
+BULLET_SOFTBODY_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_ATOMIC_LIBRARY_DEBUG
 Boost_ATOMIC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_ATOMIC_LIBRARY_RELEASE
