@@ -1,0 +1,8 @@
+prefix=/home/fgg/catkin_ws/devel
+
+Name: arania_arco
+Description: Description of arania_arco
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/fgg/catkin_ws/devel/lib 
+Requires: 
