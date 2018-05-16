@@ -9,7 +9,7 @@
     <!-- Remap zed_depth_camera frame into camera_depth_frame -->
     <node pkg="tf"
         type="static_transform_publisher"
-        name="link1_broadcaster"
+        name="camera_depth_frame_broadcaster"
         args="0 0 0 0 0 0 /zed_depth_camera camera_depth_frame 100" />
     <!-- Start Rviz with config file -->
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find arania_arco)/rviz/config/v1.rviz"/>
