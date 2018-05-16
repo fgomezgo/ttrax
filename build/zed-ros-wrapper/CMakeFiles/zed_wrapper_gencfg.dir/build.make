@@ -61,7 +61,7 @@ zed-ros-wrapper/CMakeFiles/zed_wrapper_gencfg: /home/fgg/catkin_ws/devel/lib/pyt
 /home/fgg/catkin_ws/devel/include/zed_wrapper/ZedConfig.h: /opt/ros/kinetic/share/dynamic_reconfigure/templates/ConfigType.py.template
 /home/fgg/catkin_ws/devel/include/zed_wrapper/ZedConfig.h: /opt/ros/kinetic/share/dynamic_reconfigure/templates/ConfigType.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/Zed.cfg: /home/fgg/catkin_ws/devel/include/zed_wrapper/ZedConfig.h /home/fgg/catkin_ws/devel/lib/python2.7/dist-packages/zed_wrapper/cfg/ZedConfig.py"
-	cd /home/fgg/catkin_ws/build/zed-ros-wrapper && ../catkin_generated/env_cached.sh /home/fgg/catkin_ws/src/zed-ros-wrapper/cfg/Zed.cfg /opt/ros/kinetic/share/dynamic_reconfigure/cmake/.. /home/fgg/catkin_ws/devel/share/zed_wrapper /home/fgg/catkin_ws/devel/include/zed_wrapper /home/fgg/catkin_ws/devel/lib/python2.7/dist-packages/zed_wrapper
+	cd /home/fgg/catkin_ws/build/zed-ros-wrapper && ../catkin_generated/env_cached.sh /home/fgg/catkin_ws/build/zed-ros-wrapper/setup_custom_pythonpath.sh /home/fgg/catkin_ws/src/zed-ros-wrapper/cfg/Zed.cfg /opt/ros/kinetic/share/dynamic_reconfigure/cmake/.. /home/fgg/catkin_ws/devel/share/zed_wrapper /home/fgg/catkin_ws/devel/include/zed_wrapper /home/fgg/catkin_ws/devel/lib/python2.7/dist-packages/zed_wrapper
 
 /home/fgg/catkin_ws/devel/share/zed_wrapper/docs/ZedConfig.dox: /home/fgg/catkin_ws/devel/include/zed_wrapper/ZedConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/fgg/catkin_ws/devel/share/zed_wrapper/docs/ZedConfig.dox

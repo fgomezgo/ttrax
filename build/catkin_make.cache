@@ -1,2 +1,2 @@
-zed-ros-wrapper
+depthimage_to_laserscan:zed-ros-wrapper
 -DCATKIN_DEVEL_PREFIX=/home/fgg/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/fgg/catkin_ws/install -G Unix Makefiles
