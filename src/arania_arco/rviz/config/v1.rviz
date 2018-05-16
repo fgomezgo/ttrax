@@ -8,9 +8,14 @@ Panels:
         - /Status1
         - /Grid1
         - /Odometry1
-        - /Odometry1/Status1
         - /Image1
         - /LaserScan1
+        - /LaserScan1/Status1
+        - /TF1
+        - /TF1/Frames1
+        - /TF1/Tree1/map1
+        - /TF1/Tree1/map1/zed_center1
+        - /TF1/Tree1/map1/zed_center1/zed_left_camera1
       Splitter Ratio: 0.5
     Tree Height: 522
   - Class: rviz/Selection
@@ -129,6 +134,36 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        map:
+          Value: true
+        zed_center:
+          Value: false
+        zed_depth_camera:
+          Value: true
+        zed_left_camera:
+          Value: false
+        zed_right_camera:
+          Value: false
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          zed_center:
+            zed_left_camera:
+              zed_depth_camera:
+                {}
+            zed_right_camera:
+              {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -154,7 +189,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 22.634552
+      Distance: 6.93970394
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -169,10 +204,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.765397131
+      Pitch: 0.910396576
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.41856766
+      Yaw: 5.87358284
     Saved: ~
 Window Geometry:
   Displays:
