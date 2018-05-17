@@ -32,9 +32,8 @@ sudo apt-get install nvidia-375
 - [zed_wrapper](https://github.com/stereolabs/zed-ros-wrapper)
 - [navigation](http://wiki.ros.org/navigation?distro=kinetic)
 
-For navigation package to function properly, be sure to install the following dependencies
+For navigation package to function properly, be sure to install the required dependencies with the following command:
 
 ```
-sudo apt-get install libasound2-dev libbullet-dev libbulletsoftbody2.83.6 libcaca-dev libcppunit-1.13-0v5 libcppunit-dev libpulse-dev libsdl-image1.2 libsdl-image1.2-dev libsdl1.2-dev libsdl1.2debian libslang2-dev
-
+rosdep install --from-paths ~/catkin_ws/src/navigation/ --ignore-src --rosdistro=kinetic -y
 ```
