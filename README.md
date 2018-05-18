@@ -33,8 +33,9 @@ sudo apt-get install nvidia-375
 - [navigation](http://wiki.ros.org/navigation?distro=kinetic)
 - [navigation_2d](https://github.com/skasperski/navigation_2d)
 
-For navigation package to function properly, be sure to install the required dependencies with the following command:
+For navigation package to function properly, be sure to install the required dependencies with the following commands:
 
 ```
 rosdep install --from-paths ~/catkin_ws/src/navigation/ --ignore-src --rosdistro=kinetic -y
+rosdep install --from-paths ~/catkin_ws/src/navigation_2d/ --ignore-src --rosdistro=kinetic -y
 ```
