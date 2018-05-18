@@ -11,6 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  zed_wrapper
+  depth_image_to_laserscan
 )
 
 ## System dependencies are found with CMake's conventions
@@ -197,3 +199,7 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(gps_target src/gps_target.cpp)
+target_link_libraries(gps_target ${catkin_LIBRARIES})
+add_dependencies(gps_target arania_arco_generate_messages_cpp)
