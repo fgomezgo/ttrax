@@ -31,6 +31,7 @@ sudo apt-get install nvidia-375
 - [depthimage_to_laserscan](https://github.com/ros-perception/depthimage_to_laserscan)
 - [zed_wrapper](https://github.com/stereolabs/zed-ros-wrapper)
 - [navigation](http://wiki.ros.org/navigation?distro=kinetic)
+- [navigation_2d](https://github.com/skasperski/navigation_2d)
 
 For navigation package to function properly, be sure to install the required dependencies with the following command:
 
