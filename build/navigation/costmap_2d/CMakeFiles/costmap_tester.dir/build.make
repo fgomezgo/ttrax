@@ -252,6 +252,7 @@ costmap_tester_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/x86_64-linux-gnu/libpcl_search.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/libOpenNI.so
+/home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/x86_64-linux-gnu/libjpeg.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/x86_64-linux-gnu/libpng.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/x86_64-linux-gnu/libtiff.so
@@ -340,6 +341,7 @@ costmap_tester_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/x86_64-linux-gnu/libpcl_search.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/libOpenNI.so
+/home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/x86_64-linux-gnu/libjpeg.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/x86_64-linux-gnu/libpng.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/costmap_tester: /usr/lib/x86_64-linux-gnu/libtiff.so

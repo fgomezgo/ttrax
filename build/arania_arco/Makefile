@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/fgg/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -99,6 +87,18 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target test
 test:
@@ -164,6 +164,36 @@ preinstall/fast:
 depend:
 	cd /home/fgg/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+arania_arco/CMakeFiles/arania_arco_generate_messages.dir/rule:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 arania_arco/CMakeFiles/arania_arco_generate_messages.dir/rule
+.PHONY : arania_arco/CMakeFiles/arania_arco_generate_messages.dir/rule
+
+# Convenience name for target.
+arania_arco_generate_messages: arania_arco/CMakeFiles/arania_arco_generate_messages.dir/rule
+
+.PHONY : arania_arco_generate_messages
+
+# fast build rule for target.
+arania_arco_generate_messages/fast:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f arania_arco/CMakeFiles/arania_arco_generate_messages.dir/build.make arania_arco/CMakeFiles/arania_arco_generate_messages.dir/build
+.PHONY : arania_arco_generate_messages/fast
+
+# Convenience name for target.
+arania_arco/CMakeFiles/gps_target.dir/rule:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 arania_arco/CMakeFiles/gps_target.dir/rule
+.PHONY : arania_arco/CMakeFiles/gps_target.dir/rule
+
+# Convenience name for target.
+gps_target: arania_arco/CMakeFiles/gps_target.dir/rule
+
+.PHONY : gps_target
+
+# fast build rule for target.
+gps_target/fast:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f arania_arco/CMakeFiles/gps_target.dir/build.make arania_arco/CMakeFiles/gps_target.dir/build
+.PHONY : gps_target/fast
 
 # Convenience name for target.
 arania_arco/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
@@ -315,16 +345,45 @@ rosgraph_msgs_generate_messages_py/fast:
 	cd /home/fgg/catkin_ws/build && $(MAKE) -f arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
+src/gps_target.o: src/gps_target.cpp.o
+
+.PHONY : src/gps_target.o
+
+# target to build an object file
+src/gps_target.cpp.o:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f arania_arco/CMakeFiles/gps_target.dir/build.make arania_arco/CMakeFiles/gps_target.dir/src/gps_target.cpp.o
+.PHONY : src/gps_target.cpp.o
+
+src/gps_target.i: src/gps_target.cpp.i
+
+.PHONY : src/gps_target.i
+
+# target to preprocess a source file
+src/gps_target.cpp.i:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f arania_arco/CMakeFiles/gps_target.dir/build.make arania_arco/CMakeFiles/gps_target.dir/src/gps_target.cpp.i
+.PHONY : src/gps_target.cpp.i
+
+src/gps_target.s: src/gps_target.cpp.s
+
+.PHONY : src/gps_target.s
+
+# target to generate assembly for a file
+src/gps_target.cpp.s:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f arania_arco/CMakeFiles/gps_target.dir/build.make arania_arco/CMakeFiles/gps_target.dir/src/gps_target.cpp.s
+.PHONY : src/gps_target.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... install/strip"
+	@echo "... install"
+	@echo "... arania_arco_generate_messages"
+	@echo "... gps_target"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... test"
 	@echo "... roscpp_generate_messages_nodejs"
@@ -338,6 +397,9 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... src/gps_target.o"
+	@echo "... src/gps_target.i"
+	@echo "... src/gps_target.s"
 .PHONY : help
 
 

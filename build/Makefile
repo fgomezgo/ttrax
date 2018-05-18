@@ -660,6 +660,32 @@ nav2d_msgs_gencpp/fast:
 .PHONY : nav2d_msgs_gencpp/fast
 
 #=============================================================================
+# Target rules for targets named arania_arco_generate_messages
+
+# Build rule for target.
+arania_arco_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arania_arco_generate_messages
+.PHONY : arania_arco_generate_messages
+
+# fast build rule for target.
+arania_arco_generate_messages/fast:
+	$(MAKE) -f arania_arco/CMakeFiles/arania_arco_generate_messages.dir/build.make arania_arco/CMakeFiles/arania_arco_generate_messages.dir/build
+.PHONY : arania_arco_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named gps_target
+
+# Build rule for target.
+gps_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gps_target
+.PHONY : gps_target
+
+# fast build rule for target.
+gps_target/fast:
+	$(MAKE) -f arania_arco/CMakeFiles/gps_target.dir/build.make arania_arco/CMakeFiles/gps_target.dir/build
+.PHONY : gps_target/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_lisp
 
 # Build rule for target.
@@ -5546,6 +5572,8 @@ help:
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... nav2d_msgs_generate_messages_cpp"
 	@echo "... nav2d_msgs_gencpp"
+	@echo "... arania_arco_generate_messages"
+	@echo "... gps_target"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"

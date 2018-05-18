@@ -97,6 +97,7 @@ move_slow_and_clear_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /home/fgg/catkin_ws/devel/lib/liblayers.so
+/home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0
@@ -354,6 +355,7 @@ move_slow_and_clear_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersHyperTree-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolumeOpenGL-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libvtkIOPostgreSQL-6.2.so.6.2.0
+/home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libvtkWrappingJava-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelFlowPaths-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_slow_and_clear.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersAMR-6.2.so.6.2.0

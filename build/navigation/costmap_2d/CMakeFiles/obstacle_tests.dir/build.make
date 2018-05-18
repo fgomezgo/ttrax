@@ -253,6 +253,7 @@ obstacle_tests_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/x86_64-linux-gnu/libpcl_search.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/libOpenNI.so
+/home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/x86_64-linux-gnu/libjpeg.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/x86_64-linux-gnu/libpng.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/x86_64-linux-gnu/libtiff.so
@@ -341,6 +342,7 @@ obstacle_tests_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/x86_64-linux-gnu/libpcl_search.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/libOpenNI.so
+/home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/x86_64-linux-gnu/libjpeg.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/x86_64-linux-gnu/libpng.so
 /home/fgg/catkin_ws/devel/lib/costmap_2d/obstacle_tests: /usr/lib/x86_64-linux-gnu/libtiff.so

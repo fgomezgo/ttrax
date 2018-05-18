@@ -125,10 +125,6 @@ trajectory_planner_ros_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtWebkit-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtSQL-6.2.so.6.2.0
-/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/liblaser_geometry.so
-/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/libpcl_ros_filters.so
-/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/libpcl_ros_io.so
-/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/libpcl_ros_tf.so
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /home/fgg/catkin_ws/devel/lib/libvoxel_grid.so
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libvtkImagingStencil-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libvtkIOParallelNetCDF-6.2.so.6.2.0
@@ -161,6 +157,11 @@ trajectory_planner_ros_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libvtkFiltersHyperTree-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolumeOpenGL-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libvtkIOPostgreSQL-6.2.so.6.2.0
+/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/libOpenNI2.so
+/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/liblaser_geometry.so
+/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/libpcl_ros_filters.so
+/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/libpcl_ros_io.so
+/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/libpcl_ros_tf.so
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libpcl_common.so
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
@@ -245,6 +246,11 @@ trajectory_planner_ros_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libvtkproj4-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libvtkTestingGenericBridge-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/libgl2ps.so
+/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/libOpenNI2.so
+/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/liblaser_geometry.so
+/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/libpcl_ros_filters.so
+/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/libpcl_ros_io.so
+/home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /opt/ros/kinetic/lib/libpcl_ros_tf.so
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libpcl_common.so
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
 /home/fgg/catkin_ws/devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libpcl_octree.so

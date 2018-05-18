@@ -92,6 +92,7 @@ move_base_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: navigation/move_base/CMakeFiles/move_base.dir/build.make
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /home/fgg/catkin_ws/devel/lib/libclear_costmap_recovery.so
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /home/fgg/catkin_ws/devel/lib/libnavfn.so
+/home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0
@@ -473,6 +474,7 @@ move_base_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libvtkmetaio-6.2.so.6.2.0
+/home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0

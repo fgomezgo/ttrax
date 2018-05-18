@@ -91,6 +91,7 @@ point_grid_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid.cpp.o
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: navigation/base_local_planner/CMakeFiles/point_grid.dir/build.make
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /home/fgg/catkin_ws/devel/lib/liblayers.so
+/home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0
@@ -348,6 +349,7 @@ point_grid_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libvtkFiltersHyperTree-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolumeOpenGL-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libvtkIOPostgreSQL-6.2.so.6.2.0
+/home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libvtkWrappingJava-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelFlowPaths-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libvtkFiltersAMR-6.2.so.6.2.0

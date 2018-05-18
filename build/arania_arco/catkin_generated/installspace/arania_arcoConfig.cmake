@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/fgg/catkin_ws/install/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/fgg/catkin_ws/install/lib;/home/fgg/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -189,7 +189,7 @@ foreach(depend ${depends})
   list(APPEND arania_arco_EXPORTED_TARGETS ${${arania_arco_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "arania_arco-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${arania_arco_DIR}/${extra})

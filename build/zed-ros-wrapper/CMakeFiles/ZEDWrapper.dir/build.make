@@ -162,6 +162,7 @@ ZEDWrapper_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/x86_64-linux-gnu/libpcl_search.so
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/libOpenNI.so
+/home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/x86_64-linux-gnu/libz.so
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/x86_64-linux-gnu/libjpeg.so
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/x86_64-linux-gnu/libpng.so
@@ -209,6 +210,7 @@ ZEDWrapper_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/x86_64-linux-gnu/libqhull.so
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/libOpenNI.so
+/home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/x86_64-linux-gnu/libvtkImagingStencil-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libZEDWrapper.so: /usr/lib/x86_64-linux-gnu/libz.so

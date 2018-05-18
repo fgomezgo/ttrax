@@ -559,6 +559,7 @@ base_local_planner_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/build.make
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /home/fgg/catkin_ws/devel/lib/liblayers.so
+/home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0
@@ -799,6 +800,7 @@ base_local_planner_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libpcl_search.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/libOpenNI.so
+/home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libz.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libjpeg.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libpng.so
@@ -846,6 +848,7 @@ base_local_planner_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libqhull.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/libOpenNI.so
+/home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libz.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libjpeg.so
@@ -1033,6 +1036,7 @@ base_local_planner_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libvtkmetaio-6.2.so.6.2.0
+/home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /opt/ros/kinetic/lib/liblaser_geometry.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /opt/ros/kinetic/lib/libpcl_ros_filters.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /opt/ros/kinetic/lib/libpcl_ros_io.so
@@ -1121,6 +1125,11 @@ base_local_planner_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libvtkproj4-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libvtkTestingGenericBridge-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/libgl2ps.so
+/home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/libOpenNI2.so
+/home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /opt/ros/kinetic/lib/liblaser_geometry.so
+/home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /opt/ros/kinetic/lib/libpcl_ros_filters.so
+/home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /opt/ros/kinetic/lib/libpcl_ros_io.so
+/home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /opt/ros/kinetic/lib/libpcl_ros_tf.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libpcl_common.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
 /home/fgg/catkin_ws/devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libpcl_octree.so

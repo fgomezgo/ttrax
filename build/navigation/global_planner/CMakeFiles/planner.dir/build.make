@@ -93,6 +93,7 @@ planner_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /home/fgg/catkin_ws/devel/lib/libglobal_planner.so
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /home/fgg/catkin_ws/devel/lib/libnavfn.so
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /home/fgg/catkin_ws/devel/lib/liblayers.so
+/home/fgg/catkin_ws/devel/lib/global_planner/planner: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0
@@ -470,6 +471,7 @@ planner_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libvtkmetaio-6.2.so.6.2.0
+/home/fgg/catkin_ws/devel/lib/global_planner/planner: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /opt/ros/kinetic/lib/liblaser_geometry.so
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /opt/ros/kinetic/lib/libpcl_ros_filters.so
 /home/fgg/catkin_ws/devel/lib/global_planner/planner: /opt/ros/kinetic/lib/libpcl_ros_io.so

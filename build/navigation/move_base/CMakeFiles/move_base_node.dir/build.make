@@ -250,6 +250,7 @@ move_base_node_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/move_base/move_base: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/move_base/move_base: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/move_base/move_base: /usr/lib/x86_64-linux-gnu/libvtkmetaio-6.2.so.6.2.0
+/home/fgg/catkin_ws/devel/lib/move_base/move_base: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/move_base/move_base: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/move_base/move_base: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/move_base/move_base: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0

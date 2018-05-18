@@ -92,6 +92,7 @@ localize_client_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/build.make
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /home/fgg/catkin_ws/devel/lib/libRobotOperator.so
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /home/fgg/catkin_ws/devel/lib/liblayers.so
+/home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0
@@ -469,6 +470,7 @@ localize_client_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /usr/lib/x86_64-linux-gnu/libvtkmetaio-6.2.so.6.2.0
+/home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /opt/ros/kinetic/lib/liblaser_geometry.so
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /opt/ros/kinetic/lib/libpcl_ros_filters.so
 /home/fgg/catkin_ws/devel/lib/nav2d_navigator/localize_client: /opt/ros/kinetic/lib/libpcl_ros_io.so

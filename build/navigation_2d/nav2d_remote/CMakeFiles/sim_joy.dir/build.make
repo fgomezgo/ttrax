@@ -94,6 +94,7 @@ sim_joy_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /home/fgg/catkin_ws/devel/lib/libMapInflationTool.so
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /home/fgg/catkin_ws/devel/lib/libRobotOperator.so
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /home/fgg/catkin_ws/devel/lib/liblayers.so
+/home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0
@@ -471,6 +472,7 @@ sim_joy_EXTERNAL_OBJECTS =
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-6.2.so.6.2.0
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /usr/lib/x86_64-linux-gnu/libvtkmetaio-6.2.so.6.2.0
+/home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /usr/lib/libOpenNI2.so
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /opt/ros/kinetic/lib/liblaser_geometry.so
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /opt/ros/kinetic/lib/libpcl_ros_filters.so
 /home/fgg/catkin_ws/devel/lib/nav2d_remote/sim_joy: /opt/ros/kinetic/lib/libpcl_ros_io.so
