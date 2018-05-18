@@ -111,7 +111,7 @@ CMakeFiles/run_tests.dir/all: navigation/navfn/test/CMakeFiles/_run_tests_navfn.
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
@@ -212,7 +212,7 @@ CMakeFiles/tests.dir/all: navigation/navfn/test/CMakeFiles/path_calc_test.dir/al
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
@@ -374,12 +374,12 @@ gtest/gtest/preinstall:
 gtest/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=41 "Built target gtest"
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/gtest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/rule
@@ -406,7 +406,7 @@ clean: gtest/gtest/CMakeFiles/gtest.dir/clean
 gtest/gtest/CMakeFiles/gtest_main.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=42 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target gtest_main"
 .PHONY : gtest/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -615,7 +615,7 @@ all: navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages.dir/rule
@@ -939,7 +939,7 @@ navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_genlisp.dir/all: navigation_2d/na
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_genlisp.dir/rule
@@ -970,12 +970,12 @@ navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/all: na
 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/_nav2d_msgs_generate_messages_check_deps_RobotPose.dir/all
 	$(MAKE) -f navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/build.make navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/build.make navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=51 "Built target nav2d_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target nav2d_msgs_generate_messages_eus"
 .PHONY : navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/rule
@@ -1106,12 +1106,12 @@ navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/all: n
 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/_nav2d_msgs_generate_messages_check_deps_RobotPose.dir/all
 	$(MAKE) -f navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/build.make navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/build.make navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target nav2d_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=51 "Built target nav2d_msgs_generate_messages_lisp"
 .PHONY : navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/rule
@@ -1239,7 +1239,7 @@ navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_geneus.dir/all: navigation_2d/nav
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_geneus.dir/rule
@@ -1430,12 +1430,12 @@ navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/all: na
 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/_nav2d_msgs_generate_messages_check_deps_RobotPose.dir/all
 	$(MAKE) -f navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/build.make navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/build.make navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target nav2d_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=50 "Built target nav2d_msgs_generate_messages_cpp"
 .PHONY : navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/rule
@@ -1467,7 +1467,7 @@ navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_gencpp.dir/all: navigation_2d/nav
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_gencpp.dir/rule
@@ -1492,13 +1492,11 @@ clean: navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_gencpp.dir/clean
 
 # Convenience name for "all" pass in the directory.
 arania_arco/all: arania_arco/CMakeFiles/arania_arco_generate_messages.dir/all
-arania_arco/all: arania_arco/CMakeFiles/gps_target.dir/all
 
 .PHONY : arania_arco/all
 
 # Convenience name for "clean" pass in the directory.
 arania_arco/clean: arania_arco/CMakeFiles/arania_arco_generate_messages.dir/clean
-arania_arco/clean: arania_arco/CMakeFiles/gps_target.dir/clean
 arania_arco/clean: arania_arco/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 arania_arco/clean: arania_arco/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 arania_arco/clean: arania_arco/CMakeFiles/roscpp_generate_messages_eus.dir/clean
@@ -1551,57 +1549,6 @@ arania_arco/CMakeFiles/arania_arco_generate_messages.dir/clean:
 
 # clean rule for target.
 clean: arania_arco/CMakeFiles/arania_arco_generate_messages.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target arania_arco/CMakeFiles/gps_target.dir
-
-# All Build rule for target.
-arania_arco/CMakeFiles/gps_target.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: arania_arco/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: arania_arco/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: arania_arco/CMakeFiles/roscpp_generate_messages_eus.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: arania_arco/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: arania_arco/CMakeFiles/roscpp_generate_messages_py.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-arania_arco/CMakeFiles/gps_target.dir/all: arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(MAKE) -f arania_arco/CMakeFiles/gps_target.dir/build.make arania_arco/CMakeFiles/gps_target.dir/depend
-	$(MAKE) -f arania_arco/CMakeFiles/gps_target.dir/build.make arania_arco/CMakeFiles/gps_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=41 "Built target gps_target"
-.PHONY : arania_arco/CMakeFiles/gps_target.dir/all
-
-# Include target in all.
-all: arania_arco/CMakeFiles/gps_target.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-arania_arco/CMakeFiles/gps_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 arania_arco/CMakeFiles/gps_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
-.PHONY : arania_arco/CMakeFiles/gps_target.dir/rule
-
-# Convenience name for target.
-gps_target: arania_arco/CMakeFiles/gps_target.dir/rule
-
-.PHONY : gps_target
-
-# clean rule for target.
-arania_arco/CMakeFiles/gps_target.dir/clean:
-	$(MAKE) -f arania_arco/CMakeFiles/gps_target.dir/build.make arania_arco/CMakeFiles/gps_target.dir/clean
-.PHONY : arania_arco/CMakeFiles/gps_target.dir/clean
-
-# clean rule for target.
-clean: arania_arco/CMakeFiles/gps_target.dir/clean
 
 .PHONY : clean
 
@@ -1989,7 +1936,7 @@ navigation/map_server/CMakeFiles/_run_tests_map_server_rostest_test_rtest.xml.di
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/_run_tests_map_server_rostest_test_rtest.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/_run_tests_map_server_rostest_test_rtest.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/_run_tests_map_server_rostest_test_rtest.xml.dir/rule
@@ -2021,7 +1968,7 @@ navigation/map_server/CMakeFiles/_run_tests_map_server_rostest.dir/all: navigati
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/_run_tests_map_server_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/_run_tests_map_server_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/_run_tests_map_server_rostest.dir/rule
@@ -2087,7 +2034,7 @@ navigation/map_server/CMakeFiles/_run_tests_map_server_gtest_map_server_utest.di
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/_run_tests_map_server_gtest_map_server_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/_run_tests_map_server_gtest_map_server_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/_run_tests_map_server_gtest_map_server_utest.dir/rule
@@ -2119,7 +2066,7 @@ navigation/map_server/CMakeFiles/run_tests_map_server_gtest_map_server_utest.dir
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/run_tests_map_server_gtest_map_server_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/run_tests_map_server_gtest_map_server_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/run_tests_map_server_gtest_map_server_utest.dir/rule
@@ -2151,7 +2098,7 @@ navigation/map_server/CMakeFiles/_run_tests_map_server_gtest.dir/all: navigation
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/_run_tests_map_server_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/_run_tests_map_server_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/_run_tests_map_server_gtest.dir/rule
@@ -2319,7 +2266,7 @@ all: navigation/map_server/CMakeFiles/rtest.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/rtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/rtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/rtest.dir/rule
@@ -2512,7 +2459,7 @@ navigation/map_server/CMakeFiles/_run_tests_map_server.dir/all: navigation/map_s
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/_run_tests_map_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/_run_tests_map_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/_run_tests_map_server.dir/rule
@@ -2573,7 +2520,7 @@ navigation/map_server/CMakeFiles/map_server-map_saver.dir/all: navigation/map_se
 navigation/map_server/CMakeFiles/map_server-map_saver.dir/all: navigation/map_server/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server-map_saver.dir/build.make navigation/map_server/CMakeFiles/map_server-map_saver.dir/depend
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server-map_saver.dir/build.make navigation/map_server/CMakeFiles/map_server-map_saver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=46 "Built target map_server-map_saver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target map_server-map_saver"
 .PHONY : navigation/map_server/CMakeFiles/map_server-map_saver.dir/all
 
 # Include target in all.
@@ -2583,7 +2530,7 @@ all: navigation/map_server/CMakeFiles/map_server-map_saver.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/map_server-map_saver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/map_server-map_saver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/map_server-map_saver.dir/rule
@@ -2676,7 +2623,7 @@ navigation/map_server/CMakeFiles/map_server_image_loader.dir/all: navigation/map
 navigation/map_server/CMakeFiles/map_server_image_loader.dir/all: navigation/map_server/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server_image_loader.dir/build.make navigation/map_server/CMakeFiles/map_server_image_loader.dir/depend
 	$(MAKE) -f navigation/map_server/CMakeFiles/map_server_image_loader.dir/build.make navigation/map_server/CMakeFiles/map_server_image_loader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target map_server_image_loader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=46 "Built target map_server_image_loader"
 .PHONY : navigation/map_server/CMakeFiles/map_server_image_loader.dir/all
 
 # Include target in all.
@@ -2686,7 +2633,7 @@ all: navigation/map_server/CMakeFiles/map_server_image_loader.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/map_server_image_loader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/map_server_image_loader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/map_server_image_loader.dir/rule
@@ -2783,7 +2730,7 @@ navigation/map_server/CMakeFiles/run_tests_map_server.dir/all: navigation/map_se
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/run_tests_map_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/run_tests_map_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/run_tests_map_server.dir/rule
@@ -3047,7 +2994,7 @@ all: navigation/map_server/CMakeFiles/map_server.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/map_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/map_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/map_server.dir/rule
@@ -3080,7 +3027,7 @@ navigation/map_server/CMakeFiles/map_server_utest.dir/all: navigation/map_server
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/map_server_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/map_server_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/map_server_utest.dir/rule
@@ -3112,7 +3059,7 @@ navigation/map_server/CMakeFiles/run_tests_map_server_gtest.dir/all: navigation/
 
 # Build rule for subdir invocation for target.
 navigation/map_server/CMakeFiles/run_tests_map_server_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/map_server/CMakeFiles/run_tests_map_server_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/map_server/CMakeFiles/run_tests_map_server_gtest.dir/rule
@@ -3227,7 +3174,7 @@ depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan_gtest.dir/
 
 # Build rule for subdir invocation for target.
 depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan_gtest.dir/rule
@@ -3259,7 +3206,7 @@ depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan.dir/all: d
 
 # Build rule for subdir invocation for target.
 depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan.dir/rule
@@ -3639,7 +3586,7 @@ depthimage_to_laserscan/CMakeFiles/libtest.dir/all: gtest/gtest/CMakeFiles/gtest
 depthimage_to_laserscan/CMakeFiles/libtest.dir/all: depthimage_to_laserscan/CMakeFiles/DepthImageToLaserScan.dir/all
 	$(MAKE) -f depthimage_to_laserscan/CMakeFiles/libtest.dir/build.make depthimage_to_laserscan/CMakeFiles/libtest.dir/depend
 	$(MAKE) -f depthimage_to_laserscan/CMakeFiles/libtest.dir/build.make depthimage_to_laserscan/CMakeFiles/libtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=44 "Built target libtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target libtest"
 .PHONY : depthimage_to_laserscan/CMakeFiles/libtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3806,7 +3753,7 @@ depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan_gtest_libt
 
 # Build rule for subdir invocation for target.
 depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan_gtest_libtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan_gtest_libtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : depthimage_to_laserscan/CMakeFiles/_run_tests_depthimage_to_laserscan_gtest_libtest.dir/rule
@@ -4295,7 +4242,7 @@ navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_rosie_multilaser.xml.dir
 
 # Build rule for subdir invocation for target.
 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_rosie_multilaser.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_rosie_multilaser.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_rosie_multilaser.xml.dir/rule
@@ -4360,7 +4307,7 @@ navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml
 
 # Build rule for subdir invocation for target.
 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
@@ -4393,7 +4340,7 @@ navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_crazy_driving
 
 # Build rule for subdir invocation for target.
 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_crazy_driving_prg.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_crazy_driving_prg.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_crazy_driving_prg.xml.dir/rule
@@ -4426,7 +4373,7 @@ navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loo
 
 # Build rule for subdir invocation for target.
 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
@@ -5105,7 +5052,7 @@ navigation/amcl/CMakeFiles/_run_tests_amcl_rostest.dir/all: navigation/amcl/CMak
 
 # Build rule for subdir invocation for target.
 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/amcl/CMakeFiles/_run_tests_amcl_rostest.dir/rule
@@ -5367,7 +5314,7 @@ navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose.xml.dir
 
 # Build rule for subdir invocation for target.
 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose.xml.dir/rule
@@ -5778,7 +5725,7 @@ navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_prf.xml.dir/a
 
 # Build rule for subdir invocation for target.
 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_prf.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_prf.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_prf.xml.dir/rule
@@ -5938,7 +5885,7 @@ navigation/amcl/CMakeFiles/_run_tests_amcl.dir/all: navigation/amcl/CMakeFiles/_
 
 # Build rule for subdir invocation for target.
 navigation/amcl/CMakeFiles/_run_tests_amcl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/amcl/CMakeFiles/_run_tests_amcl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/amcl/CMakeFiles/_run_tests_amcl.dir/rule
@@ -6042,7 +5989,7 @@ navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed
 
 # Build rule for subdir invocation for target.
 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
@@ -6107,7 +6054,7 @@ navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage
 
 # Build rule for subdir invocation for target.
 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
@@ -6191,7 +6138,7 @@ clean: navigation_2d/nav2d_localizer/CMakeFiles/SelfLocalizer.dir/clean
 navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/all: navigation_2d/nav2d_localizer/CMakeFiles/SelfLocalizer.dir/all
 	$(MAKE) -f navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/build.make navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/depend
 	$(MAKE) -f navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/build.make navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target localizer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=45 "Built target localizer"
 .PHONY : navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/all
 
 # Include target in all.
@@ -6201,7 +6148,7 @@ all: navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/all
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_localizer/CMakeFiles/localizer.dir/rule
@@ -6581,7 +6528,7 @@ navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest_test_test
 
 # Build rule for subdir invocation for target.
 navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest_test_test_robot_pose_ekf_zero_covariance.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest_test_test_robot_pose_ekf_zero_covariance.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest_test_test_robot_pose_ekf_zero_covariance.launch.dir/rule
@@ -6646,7 +6593,7 @@ navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest_test_test
 
 # Build rule for subdir invocation for target.
 navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest_test_test_robot_pose_ekf.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest_test_test_robot_pose_ekf.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest_test_test_robot_pose_ekf.launch.dir/rule
@@ -6711,7 +6658,7 @@ navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf.dir/all: navigati
 
 # Build rule for subdir invocation for target.
 navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf.dir/rule
@@ -6873,7 +6820,7 @@ navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest.dir/all: 
 
 # Build rule for subdir invocation for target.
 navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/robot_pose_ekf/CMakeFiles/_run_tests_robot_pose_ekf_rostest.dir/rule
@@ -7387,7 +7334,7 @@ all: navigation/robot_pose_ekf/CMakeFiles/test_robot_pose_ekf_zero_covariance.di
 
 # Build rule for subdir invocation for target.
 navigation/robot_pose_ekf/CMakeFiles/test_robot_pose_ekf_zero_covariance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/robot_pose_ekf/CMakeFiles/test_robot_pose_ekf_zero_covariance.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/robot_pose_ekf/CMakeFiles/test_robot_pose_ekf_zero_covariance.dir/rule
@@ -7479,7 +7426,7 @@ all: navigation/robot_pose_ekf/CMakeFiles/test_robot_pose_ekf.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/robot_pose_ekf/CMakeFiles/test_robot_pose_ekf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/robot_pose_ekf/CMakeFiles/test_robot_pose_ekf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/robot_pose_ekf/CMakeFiles/test_robot_pose_ekf.dir/rule
@@ -7730,7 +7677,7 @@ navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all: navigation/voxel_grid
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/voxel_grid_tests.dir/rule
@@ -7764,7 +7711,7 @@ navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.di
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule
@@ -7796,7 +7743,7 @@ navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/all: navigation/voxel
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/rule
@@ -7828,7 +7775,7 @@ navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/all: navigation/voxel_
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/rule
@@ -7911,7 +7858,7 @@ navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/all: navigation/
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/rule
@@ -7943,7 +7890,7 @@ navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule
@@ -7975,7 +7922,7 @@ navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/all: navigation
 
 # Build rule for subdir invocation for target.
 navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/rule
@@ -8121,7 +8068,7 @@ navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_array_parser_test.d
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_array_parser_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_array_parser_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_array_parser_test.dir/rule
@@ -8153,7 +8100,7 @@ navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest_array_parser_test.di
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest_array_parser_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest_array_parser_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest_array_parser_test.dir/rule
@@ -8185,7 +8132,7 @@ navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest.dir/all: navigation
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest.dir/rule
@@ -8217,7 +8164,7 @@ navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest.dir/all: navigation/
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_gtest.dir/rule
@@ -8251,7 +8198,7 @@ navigation/costmap_2d/CMakeFiles/array_parser_test.dir/all: navigation/costmap_2
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/array_parser_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/array_parser_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/array_parser_test.dir/rule
@@ -8284,7 +8231,7 @@ navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_static_tests
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_static_tests.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_static_tests.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_static_tests.launch.dir/rule
@@ -8749,7 +8696,7 @@ navigation/costmap_2d/CMakeFiles/footprint_tests.dir/all: navigation/costmap_2d/
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/footprint_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/footprint_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/footprint_tests.dir/rule
@@ -9086,7 +9033,7 @@ navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_simple_drivi
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule
@@ -9247,7 +9194,7 @@ navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_inflation_te
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_inflation_tests.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_inflation_tests.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_inflation_tests.launch.dir/rule
@@ -9383,7 +9330,7 @@ navigation/costmap_2d/CMakeFiles/static_tests.dir/all: navigation/costmap_2d/CMa
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/static_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/static_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/static_tests.dir/rule
@@ -9719,7 +9666,7 @@ navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_footprint_te
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule
@@ -10195,7 +10142,7 @@ navigation/costmap_2d/CMakeFiles/costmap_tester.dir/all: navigation/costmap_2d/C
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/costmap_tester.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_tester.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/costmap_tester.dir/rule
@@ -10225,12 +10172,12 @@ navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/all: navigation/costmap_2d/C
 navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/all: navigation/costmap_2d/CMakeFiles/layers.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/build.make navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/build.make navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target obstacle_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=89 "Built target obstacle_tests"
 .PHONY : navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/rule
@@ -10260,12 +10207,12 @@ navigation/costmap_2d/CMakeFiles/inflation_tests.dir/all: navigation/costmap_2d/
 navigation/costmap_2d/CMakeFiles/inflation_tests.dir/all: navigation/costmap_2d/CMakeFiles/layers.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/inflation_tests.dir/build.make navigation/costmap_2d/CMakeFiles/inflation_tests.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/inflation_tests.dir/build.make navigation/costmap_2d/CMakeFiles/inflation_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target inflation_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=42 "Built target inflation_tests"
 .PHONY : navigation/costmap_2d/CMakeFiles/inflation_tests.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/inflation_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/inflation_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/inflation_tests.dir/rule
@@ -10298,7 +10245,7 @@ navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_obstacle_tes
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_obstacle_tests.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_obstacle_tests.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_obstacle_tests.launch.dir/rule
@@ -10395,7 +10342,7 @@ navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d.dir/all: navigation/costma
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d.dir/rule
@@ -10428,7 +10375,7 @@ navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/all: navigation/costm
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/rule
@@ -10464,7 +10411,7 @@ navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/all: navigati
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/rule
@@ -10559,7 +10506,7 @@ navigation_2d/nav2d_operator/CMakeFiles/operator.dir/all: navigation/costmap_2d/
 navigation_2d/nav2d_operator/CMakeFiles/operator.dir/all: navigation_2d/nav2d_operator/CMakeFiles/RobotOperator.dir/all
 	$(MAKE) -f navigation_2d/nav2d_operator/CMakeFiles/operator.dir/build.make navigation_2d/nav2d_operator/CMakeFiles/operator.dir/depend
 	$(MAKE) -f navigation_2d/nav2d_operator/CMakeFiles/operator.dir/build.make navigation_2d/nav2d_operator/CMakeFiles/operator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=90 "Built target operator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target operator"
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/operator.dir/all
 
 # Include target in all.
@@ -10569,7 +10516,7 @@ all: navigation_2d/nav2d_operator/CMakeFiles/operator.dir/all
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_operator/CMakeFiles/operator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_operator/CMakeFiles/operator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/operator.dir/rule
@@ -10601,7 +10548,7 @@ navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genpy.dir/all: navigation
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genpy.dir/rule
@@ -10628,12 +10575,12 @@ clean: navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genpy.dir/clean
 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_py.dir/all: navigation_2d/nav2d_operator/CMakeFiles/_nav2d_operator_generate_messages_check_deps_cmd.dir/all
 	$(MAKE) -f navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_py.dir/build.make navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_py.dir/depend
 	$(MAKE) -f navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_py.dir/build.make navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=84 "Built target nav2d_operator_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target nav2d_operator_generate_messages_py"
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_py.dir/rule
@@ -10697,7 +10644,7 @@ navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_geneus.dir/all: navigatio
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_geneus.dir/rule
@@ -10909,7 +10856,7 @@ all: navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages.di
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages.dir/rule
@@ -10968,12 +10915,12 @@ clean: navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_gennodejs.dir/clea
 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/all: navigation_2d/nav2d_operator/CMakeFiles/_nav2d_operator_generate_messages_check_deps_cmd.dir/all
 	$(MAKE) -f navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/build.make navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/depend
 	$(MAKE) -f navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/build.make navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target nav2d_operator_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=83 "Built target nav2d_operator_generate_messages_lisp"
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/rule
@@ -11064,12 +11011,12 @@ clean: navigation_2d/nav2d_operator/CMakeFiles/_nav2d_operator_generate_messages
 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/all: navigation_2d/nav2d_operator/CMakeFiles/_nav2d_operator_generate_messages_check_deps_cmd.dir/all
 	$(MAKE) -f navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/build.make navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/depend
 	$(MAKE) -f navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/build.make navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=83 "Built target nav2d_operator_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target nav2d_operator_generate_messages_eus"
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/rule
@@ -11101,7 +11048,7 @@ navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genlisp.dir/all: navigati
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_genlisp.dir/rule
@@ -12090,7 +12037,7 @@ navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/all: navigation_2d/
 navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/all: navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/all
 	$(MAKE) -f navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/build.make navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/depend
 	$(MAKE) -f navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/build.make navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=45 "Built target localize_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target localize_client"
 .PHONY : navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/all
 
 # Include target in all.
@@ -12100,7 +12047,7 @@ all: navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/all
 
 # Build rule for subdir invocation for target.
 navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation_2d/nav2d_navigator/CMakeFiles/localize_client.dir/rule
@@ -14042,6 +13989,181 @@ clean: navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory navigation_2d/nav2d_remote_gps
+
+# Convenience name for "all" pass in the directory.
+navigation_2d/nav2d_remote_gps/all: navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all
+
+.PHONY : navigation_2d/nav2d_remote_gps/all
+
+# Convenience name for "clean" pass in the directory.
+navigation_2d/nav2d_remote_gps/clean: navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/clean
+
+.PHONY : navigation_2d/nav2d_remote_gps/clean
+
+# Convenience name for "preinstall" pass in the directory.
+navigation_2d/nav2d_remote_gps/preinstall:
+
+.PHONY : navigation_2d/nav2d_remote_gps/preinstall
+
+#=============================================================================
+# Target rules for target navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir
+
+# All Build rule for target.
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d/CMakeFiles/_catkin_empty_exported_target.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_msgs/CMakeFiles/nav2d_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: arania_arco/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: arania_arco/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: arania_arco/CMakeFiles/roscpp_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: arania_arco/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: arania_arco/CMakeFiles/roscpp_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: arania_arco/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/map_server/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/nodelet_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/bond_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/nodelet_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/nodelet_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/nodelet_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/nodelet_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/bond_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/bond_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/bond_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/bond_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: depthimage_to_laserscan/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/tf_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/tf_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/tf_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/tf_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/std_srvs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/tf_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/topic_tools_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/topic_tools_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/amcl/CMakeFiles/actionlib_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_karto/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_karto/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_karto/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_karto/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_karto/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/voxel_grid/CMakeFiles/voxel_grid.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/nodelet_topic_tools_gencfg.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/pcl_ros_gencfg.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/layers.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_operator/CMakeFiles/RobotOperator.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_operator/CMakeFiles/nav2d_operator_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_eus.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_py.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_cpp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_lisp.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_navigator/CMakeFiles/nav2d_navigator_generate_messages_nodejs.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_navigator/CMakeFiles/MapInflationTool.dir/all
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all: navigation_2d/nav2d_navigator/CMakeFiles/RobotNavigator.dir/all
+	$(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/depend
+	$(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target remote_gps"
+.PHONY : navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all
+
+# Include target in all.
+all: navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 41
+	$(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+.PHONY : navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/rule
+
+# Convenience name for target.
+remote_gps: navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/rule
+
+.PHONY : remote_gps
+
+# clean rule for target.
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/clean:
+	$(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/clean
+.PHONY : navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/clean
+
+# clean rule for target.
+clean: navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory navigation/nav_core
 
 # Convenience name for "all" pass in the directory.
@@ -14119,7 +14241,7 @@ navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator.dir/rule
@@ -14146,12 +14268,12 @@ clean: navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gte
 navigation/base_local_planner/CMakeFiles/line_iterator.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/line_iterator.dir/build.make navigation/base_local_planner/CMakeFiles/line_iterator.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/line_iterator.dir/build.make navigation/base_local_planner/CMakeFiles/line_iterator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target line_iterator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=44 "Built target line_iterator"
 .PHONY : navigation/base_local_planner/CMakeFiles/line_iterator.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/line_iterator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/line_iterator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/line_iterator.dir/rule
@@ -14217,7 +14339,7 @@ navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_bas
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_base_local_planner_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_base_local_planner_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_base_local_planner_utest.dir/rule
@@ -14385,7 +14507,7 @@ navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/base_loc
 navigation/base_local_planner/CMakeFiles/point_grid.dir/all: navigation/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/all
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/point_grid.dir/build.make navigation/base_local_planner/CMakeFiles/point_grid.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/point_grid.dir/build.make navigation/base_local_planner/CMakeFiles/point_grid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target point_grid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=91 "Built target point_grid"
 .PHONY : navigation/base_local_planner/CMakeFiles/point_grid.dir/all
 
 # Include target in all.
@@ -14395,7 +14517,7 @@ all: navigation/base_local_planner/CMakeFiles/point_grid.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/point_grid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/point_grid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/point_grid.dir/rule
@@ -14459,7 +14581,7 @@ navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner.dir/all: n
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner.dir/rule
@@ -14725,7 +14847,7 @@ navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest.dir
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest.dir/rule
@@ -14790,7 +14912,7 @@ navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest.dir/
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest.dir/rule
@@ -14824,7 +14946,7 @@ navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_lin
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_line_iterator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_line_iterator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_line_iterator.dir/rule
@@ -15090,7 +15212,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all: navig
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/rule
@@ -15186,7 +15308,7 @@ navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base_local_planner_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base_local_planner_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base_local_planner_utest.dir/rule
@@ -15218,7 +15340,7 @@ navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner.dir/all: 
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/_run_tests_base_local_planner.dir/rule
@@ -15440,7 +15562,7 @@ navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.d
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/rule
@@ -15472,7 +15594,7 @@ navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.di
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.dir/rule
@@ -15508,7 +15630,7 @@ navigation/clear_costmap_recovery/CMakeFiles/clear_tester.dir/all: navigation/cl
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/clear_tester.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/clear_tester.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/clear_tester.dir/rule
@@ -15542,7 +15664,7 @@ navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_r
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/rule
@@ -15574,7 +15696,7 @@ navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_r
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest.dir/rule
@@ -15745,7 +15867,7 @@ navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_ro
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest.dir/rule
@@ -15809,7 +15931,7 @@ navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_ro
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/rule
@@ -16161,7 +16283,7 @@ navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/all: navigatio
 navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/all: navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/all
 	$(MAKE) -f navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/build.make navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/depend
 	$(MAKE) -f navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/build.make navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=50 "Built target move_slow_and_clear"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target move_slow_and_clear"
 .PHONY : navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/all
 
 # Include target in all.
@@ -16171,7 +16293,7 @@ all: navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/rule
@@ -16238,12 +16360,12 @@ navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/all: navigation/n
 navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/all: navigation/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target navfn_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=86 "Built target navfn_generate_messages_nodejs"
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_nodejs.dir/rule
@@ -16272,12 +16394,12 @@ navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/all: navigation/nav
 navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/all: navigation/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=86 "Built target navfn_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target navfn_generate_messages_lisp"
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/rule
@@ -16309,7 +16431,7 @@ navigation/navfn/CMakeFiles/navfn_geneus.dir/all: navigation/navfn/CMakeFiles/na
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_geneus.dir/rule
@@ -16341,7 +16463,7 @@ navigation/navfn/CMakeFiles/navfn_gencpp.dir/all: navigation/navfn/CMakeFiles/na
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_gencpp.dir/rule
@@ -16370,12 +16492,12 @@ navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/all: navigation/navf
 navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/all: navigation/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target navfn_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=85 "Built target navfn_generate_messages_eus"
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_eus.dir/rule
@@ -16480,7 +16602,7 @@ navigation/navfn/CMakeFiles/navfn_genlisp.dir/all: navigation/navfn/CMakeFiles/n
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_genlisp.dir/rule
@@ -16541,12 +16663,12 @@ navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/all: navigation/navf
 navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/all: navigation/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/build.make navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=85 "Built target navfn_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target navfn_generate_messages_cpp"
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/rule
@@ -16576,7 +16698,7 @@ navigation/navfn/CMakeFiles/navtest.dir/all: navigation/costmap_2d/CMakeFiles/la
 navigation/navfn/CMakeFiles/navtest.dir/all: navigation/navfn/CMakeFiles/navfn.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navtest.dir/build.make navigation/navfn/CMakeFiles/navtest.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navtest.dir/build.make navigation/navfn/CMakeFiles/navtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=89 "Built target navtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target navtest"
 .PHONY : navigation/navfn/CMakeFiles/navtest.dir/all
 
 # Include target in all.
@@ -16586,7 +16708,7 @@ all: navigation/navfn/CMakeFiles/navtest.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navtest.dir/rule
@@ -16782,7 +16904,7 @@ navigation/navfn/CMakeFiles/navfn.dir/all: navigation/costmap_2d/CMakeFiles/map_
 navigation/navfn/CMakeFiles/navfn.dir/all: navigation/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/all
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn.dir/build.make navigation/navfn/CMakeFiles/navfn.dir/depend
 	$(MAKE) -f navigation/navfn/CMakeFiles/navfn.dir/build.make navigation/navfn/CMakeFiles/navfn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target navfn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=84 "Built target navfn"
 .PHONY : navigation/navfn/CMakeFiles/navfn.dir/all
 
 # Include target in all.
@@ -16824,7 +16946,7 @@ navigation/navfn/CMakeFiles/navfn_gennodejs.dir/all: navigation/navfn/CMakeFiles
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_gennodejs.dir/rule
@@ -16921,7 +17043,7 @@ navigation/navfn/test/CMakeFiles/_run_tests_navfn.dir/all: navigation/navfn/test
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/_run_tests_navfn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/_run_tests_navfn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/_run_tests_navfn.dir/rule
@@ -16953,7 +17075,7 @@ navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/all: navigation/navfn/test/
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/rule
@@ -16984,12 +17106,12 @@ navigation/navfn/test/CMakeFiles/path_calc_test.dir/all: navigation/costmap_2d/C
 navigation/navfn/test/CMakeFiles/path_calc_test.dir/all: navigation/navfn/CMakeFiles/navfn.dir/all
 	$(MAKE) -f navigation/navfn/test/CMakeFiles/path_calc_test.dir/build.make navigation/navfn/test/CMakeFiles/path_calc_test.dir/depend
 	$(MAKE) -f navigation/navfn/test/CMakeFiles/path_calc_test.dir/build.make navigation/navfn/test/CMakeFiles/path_calc_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target path_calc_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=90 "Built target path_calc_test"
 .PHONY : navigation/navfn/test/CMakeFiles/path_calc_test.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/path_calc_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/path_calc_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/path_calc_test.dir/rule
@@ -17021,7 +17143,7 @@ navigation/navfn/test/CMakeFiles/_run_tests_navfn_gtest.dir/all: navigation/navf
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/_run_tests_navfn_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/_run_tests_navfn_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/_run_tests_navfn_gtest.dir/rule
@@ -17053,7 +17175,7 @@ navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/all: n
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/rule
@@ -17087,7 +17209,7 @@ navigation/navfn/test/CMakeFiles/_run_tests_navfn_gtest_path_calc_test.dir/all: 
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/_run_tests_navfn_gtest_path_calc_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/_run_tests_navfn_gtest_path_calc_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/_run_tests_navfn_gtest_path_calc_test.dir/rule
@@ -17151,7 +17273,7 @@ navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/all: navigation/navfn
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/rule
@@ -17356,7 +17478,7 @@ all: navigation/global_planner/CMakeFiles/global_planner.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/global_planner/CMakeFiles/global_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/global_planner/CMakeFiles/global_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/global_planner/CMakeFiles/global_planner.dir/rule
@@ -17493,7 +17615,7 @@ navigation/global_planner/CMakeFiles/planner.dir/all: navigation/global_planner/
 navigation/global_planner/CMakeFiles/planner.dir/all: navigation/global_planner/CMakeFiles/global_planner.dir/all
 	$(MAKE) -f navigation/global_planner/CMakeFiles/planner.dir/build.make navigation/global_planner/CMakeFiles/planner.dir/depend
 	$(MAKE) -f navigation/global_planner/CMakeFiles/planner.dir/build.make navigation/global_planner/CMakeFiles/planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=91 "Built target planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target planner"
 .PHONY : navigation/global_planner/CMakeFiles/planner.dir/all
 
 # Include target in all.
@@ -18167,7 +18289,7 @@ navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/move_base/CMa
 navigation/move_base/CMakeFiles/move_base_node.dir/all: navigation/move_base/CMakeFiles/move_base_gencfg.dir/all
 	$(MAKE) -f navigation/move_base/CMakeFiles/move_base_node.dir/build.make navigation/move_base/CMakeFiles/move_base_node.dir/depend
 	$(MAKE) -f navigation/move_base/CMakeFiles/move_base_node.dir/build.make navigation/move_base/CMakeFiles/move_base_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target move_base_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=49 "Built target move_base_node"
 .PHONY : navigation/move_base/CMakeFiles/move_base_node.dir/all
 
 # Include target in all.
@@ -18177,7 +18299,7 @@ all: navigation/move_base/CMakeFiles/move_base_node.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/move_base/CMakeFiles/move_base_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/move_base/CMakeFiles/move_base_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/move_base/CMakeFiles/move_base_node.dir/rule
@@ -18204,7 +18326,7 @@ clean: navigation/move_base/CMakeFiles/move_base_node.dir/clean
 navigation/move_base/CMakeFiles/move_base_gencfg.dir/all:
 	$(MAKE) -f navigation/move_base/CMakeFiles/move_base_gencfg.dir/build.make navigation/move_base/CMakeFiles/move_base_gencfg.dir/depend
 	$(MAKE) -f navigation/move_base/CMakeFiles/move_base_gencfg.dir/build.make navigation/move_base/CMakeFiles/move_base_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num=49 "Built target move_base_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fgg/catkin_ws/build/CMakeFiles --progress-num= "Built target move_base_gencfg"
 .PHONY : navigation/move_base/CMakeFiles/move_base_gencfg.dir/all
 
 # Include target in all.
@@ -18214,7 +18336,7 @@ all: navigation/move_base/CMakeFiles/move_base_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/move_base/CMakeFiles/move_base_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/move_base/CMakeFiles/move_base_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fgg/catkin_ws/build/CMakeFiles 0
 .PHONY : navigation/move_base/CMakeFiles/move_base_gencfg.dir/rule

@@ -673,19 +673,6 @@ arania_arco_generate_messages/fast:
 .PHONY : arania_arco_generate_messages/fast
 
 #=============================================================================
-# Target rules for targets named gps_target
-
-# Build rule for target.
-gps_target: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gps_target
-.PHONY : gps_target
-
-# fast build rule for target.
-gps_target/fast:
-	$(MAKE) -f arania_arco/CMakeFiles/gps_target.dir/build.make arania_arco/CMakeFiles/gps_target.dir/build
-.PHONY : gps_target/fast
-
-#=============================================================================
 # Target rules for targets named roscpp_generate_messages_lisp
 
 # Build rule for target.
@@ -4482,6 +4469,19 @@ sim_joy/fast:
 .PHONY : sim_joy/fast
 
 #=============================================================================
+# Target rules for targets named remote_gps
+
+# Build rule for target.
+remote_gps: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 remote_gps
+.PHONY : remote_gps
+
+# fast build rule for target.
+remote_gps/fast:
+	$(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/build
+.PHONY : remote_gps/fast
+
+#=============================================================================
 # Target rules for targets named run_tests_base_local_planner_gtest_line_iterator
 
 # Build rule for target.
@@ -5573,7 +5573,6 @@ help:
 	@echo "... nav2d_msgs_generate_messages_cpp"
 	@echo "... nav2d_msgs_gencpp"
 	@echo "... arania_arco_generate_messages"
-	@echo "... gps_target"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
@@ -5866,6 +5865,7 @@ help:
 	@echo "... ExplorationPlugins"
 	@echo "... remote_joy"
 	@echo "... sim_joy"
+	@echo "... remote_gps"
 	@echo "... run_tests_base_local_planner_gtest_line_iterator"
 	@echo "... line_iterator"
 	@echo "... clean_test_results_base_local_planner"
