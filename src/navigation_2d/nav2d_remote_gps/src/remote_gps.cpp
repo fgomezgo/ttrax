@@ -4,21 +4,6 @@
 #include <nav2d_operator/cmd.h>
 #include <nav2d_navigator/commands.h>
 
-/******************************************************
-Buttons:
- 0: A
- 1: B
- 2: X
- 3: Y
- 4: LB
- 5: RB
- 6: BACK
- 7: START
- 8: Logitech*
- 9: Left Stick
-10: Right Stick
-
- ******************************************************/
 
 class Teleoperator
 {
@@ -130,8 +115,19 @@ void Teleoperator::joyCB(const sensor_msgs::Joy::ConstPtr& msg)
 
 int main(int argc, char** argv)
 {
-	ros::init(argc, argv, "teleoperator");
-	Teleoperator tele_op;
+	//Node Initialization
+	ros::init(argc, argv, "remote_gps");
+	//Node handle
+	ros::NodeHandle nh;
+	//Printf the current position
+	printf("The current position is: 0 0");
+	//Read Goal in Map
+	double x,y;
+	printf("Give me the coordinates x y ");
+	scanf("%f%f",&x,&y);
+
+	
+	
 	
 	ros::spin();
 }
