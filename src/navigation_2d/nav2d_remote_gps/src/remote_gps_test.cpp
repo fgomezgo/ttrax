@@ -3,115 +3,41 @@
 #include <std_srvs/Trigger.h>
 #include <nav2d_operator/cmd.h>
 #include <nav2d_navigator/commands.h>
+#include <sensor_msgs/NavSatFix.h>
+#include <std_msgs/Float64.h>
 
 
-class Teleoperator
+//Pi
+const double PI = 3.14159265359;
+
+struct Target{
+	double longitude, latitude;
+	Target(){}
+} target;
+
+nav2d_operator::cmd cmd;
+
+//Publishers
+ros::Publisher cmd_pub = nh.advertise<nav2d_operator::cmd>("cmd", 100);
+
+void gpsDataCallback(const sensor_msgs/NavSatFix::ConstPtr& msg)
 {
-public:
-	Teleoperator();
-	
-private:
-	void joyCB(const sensor_msgs::Joy::ConstPtr& msg);
-
-	ros::NodeHandle mNode;
-	ros::Publisher mCommandPublisher;
-	ros::Subscriber mJoySubscriber;
-	ros::ServiceClient mStopClient;
-	ros::ServiceClient mPauseClient;
-	ros::ServiceClient mExploreClient;
-	ros::ServiceClient mGetMapClient;
-	
-	int mAxisVelocity;
-	int mAxisDirection;
-	int mButtonDriveMode;
-	int mButtonPauseNavigator;
-	int mButtonStartExploration;
-	int mButtonGetMap;
-	int mButtonStop;
-	
-	bool mButtonPressed;
-};
-
-Teleoperator::Teleoperator()
-{
-	// Button and Axis configuration
-	mAxisVelocity = 4;
-	mAxisDirection = 0;
-
-	mButtonDriveMode = 5;
-	mButtonPauseNavigator = 6;
-	mButtonStartExploration = 0;
-	mButtonGetMap = 3;
-	mButtonStop = 1;
-	
-	mCommandPublisher = mNode.advertise<nav2d_operator::cmd>("cmd", 1);
-	mJoySubscriber = mNode.subscribe<sensor_msgs::Joy>("joy", 10, &Teleoperator::joyCB, this);
-	mStopClient = mNode.serviceClient<std_srvs::Trigger>(NAV_STOP_SERVICE);
-	mPauseClient = mNode.serviceClient<std_srvs::Trigger>(NAV_PAUSE_SERVICE);
-	mExploreClient = mNode.serviceClient<std_srvs::Trigger>(NAV_EXPLORE_SERVICE);
-	mGetMapClient = mNode.serviceClient<std_srvs::Trigger>(NAV_GETMAP_SERVICE);
-	
-	mButtonPressed = false;
+	double distance = sqrt(pow(msg.longitude-target.longitude,2)+pow(msg.latitude-target.latitude,2));
+	if(distance > 3)
+		cmd.Velocity = 0.5;
+	else
+		cmd.Velocity = 0.2;
+	cmd_pub.publish(cmd);
 }
 
-void Teleoperator::joyCB(const sensor_msgs::Joy::ConstPtr& msg)
+void gpsHeadingCallback(const std_msgs/Float64::ConstPtr& msg)
 {
-	// Ignore Button-Release events
-	if(mButtonPressed)
-	{
-		mButtonPressed = false;
-	}else
-	{	
-		nav2d_operator::cmd cmd;
-		cmd.Turn = msg->axes[mAxisDirection] * -1.0;
-		cmd.Velocity = msg->axes[mAxisVelocity];
-		cmd.Mode = 0;
-		if(msg->buttons[mButtonDriveMode]) cmd.Mode = 1;
-		mCommandPublisher.publish(cmd);
-	}
-
-	if(msg->buttons[mButtonStop])
-	{
-		std_srvs::Trigger srv;
-		if(!mStopClient.call(srv))
-		{
-			ROS_ERROR("Failed to send STOP_COMMAND to Navigator.");
-		}
-		return;
-	}
-
-	if(msg->buttons[mButtonPauseNavigator])
-	{
-		std_srvs::Trigger srv;
-		if(!mPauseClient.call(srv))
-		{
-			ROS_ERROR("Failed to send PAUSE_COMMAND to Navigator.");
-		}
-		return;
-	}
-
-	if(msg->buttons[mButtonGetMap])
-	{
-		std_srvs::Trigger srv;
-		if(!mGetMapClient.call(srv))
-		{
-			ROS_ERROR("Failed to send GETMAP_COMMAND to GetMap-Client.");
-		}
-		mButtonPressed = true;
-		return;
-	}
-
-	if(msg->buttons[mButtonStartExploration])
-	{
-		std_srvs::Trigger srv;
-		if(!mExploreClient.call(srv))
-		{
-			ROS_ERROR("Failed to send EXPLORE_COMMAND to Explore-Client.");
-		}
-		mButtonPressed = true;
-		return;
-	}
+	cmd.Turn = msg.data/(2*PI);
+	cmd_pub.publish(cmd);
 }
+
+
+
 
 int main(int argc, char** argv)
 {
@@ -119,15 +45,29 @@ int main(int argc, char** argv)
 	ros::init(argc, argv, "remote_gps");
 	//Node handle
 	ros::NodeHandle nh;
+
+	//Subscribers
+	//Gps data (longitude, latitude)
+	ros::Subscriber sub = nh.subscribe("GPS_goal/gps_data", 100, gpsDataCallback);
+	//Gps heading
+	ros::Subscriber sub = nh.subscribe("GPS_goal/gps_heading", 100, gpsHeadingCallback);
+
+	
+
+	//Initialize cmd Mode
+	cmd.Mode = 0;
+	cmd.Turn = 0;
+	cmd.Velocity = 0;
+
 	//Printf the current position
 	printf("The current position is: 0 0");
 	//Read Goal in Map
-	double x,y;
-	printf("Give me the coordinates x y ");
-	scanf("%lf%lf",&x,&y);
+	
+	printf("Give me the coordinates (longitude, latitude) ");
+	scanf("%lf%lf",&target.longitude,&target.latitude);
 
 	
-	
-	
 	ros::spin();
+	
+	return 0;
 }
