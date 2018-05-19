@@ -95,5 +95,7 @@
   </VirtualDirectory>
   <VirtualDirectory Name="src">
     <File Name="src/remote_gps.cpp"/>
+    <File Name="src/remote_gps_test.cpp"/>
+    <File Name="src/robot_tf_broadcast.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

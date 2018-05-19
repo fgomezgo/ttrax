@@ -27,10 +27,16 @@ catkin_package(
 include_directories(${catkin_INCLUDE_DIRS})
 
 add_executable(remote_gps src/remote_gps.cpp)
+add_executable(remote_gps src/remote_gps_test.cpp)
+add_executable(remote_gps src/robot_tf_broadcast.cpp)
 
 add_dependencies(remote_gps ${catkin_EXPORTED_TARGETS})
+add_dependencies(remote_gps_test ${catkin_EXPORTED_TARGETS})
+add_dependencies(robot_tf_broadcast ${catkin_EXPORTED_TARGETS})
 
 target_link_libraries(remote_gps ${catkin_LIBRARIES})
+target_link_libraries(remote_gps_test ${catkin_LIBRARIES})
+target_link_libraries(robot_tf_broadcast ${catkin_LIBRARIES})
 
 #############
 ## Install ##
