@@ -1059,6 +1059,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "navigation_2d/nav2d_remote/CMakeFiles/remote_joy.dir/DependInfo.cmake"
   "navigation_2d/nav2d_remote/CMakeFiles/sim_joy.dir/DependInfo.cmake"
   "navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/DependInfo.cmake"
+  "navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/DependInfo.cmake"
+  "navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/DependInfo.cmake"
   "navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator.dir/DependInfo.cmake"
   "navigation/base_local_planner/CMakeFiles/line_iterator.dir/DependInfo.cmake"
   "navigation/base_local_planner/CMakeFiles/clean_test_results_base_local_planner.dir/DependInfo.cmake"

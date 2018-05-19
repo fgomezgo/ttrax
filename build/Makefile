@@ -4482,6 +4482,32 @@ remote_gps/fast:
 .PHONY : remote_gps/fast
 
 #=============================================================================
+# Target rules for targets named robot_tf_broadcast
+
+# Build rule for target.
+robot_tf_broadcast: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_tf_broadcast
+.PHONY : robot_tf_broadcast
+
+# fast build rule for target.
+robot_tf_broadcast/fast:
+	$(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/build
+.PHONY : robot_tf_broadcast/fast
+
+#=============================================================================
+# Target rules for targets named remote_gps_test
+
+# Build rule for target.
+remote_gps_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 remote_gps_test
+.PHONY : remote_gps_test
+
+# fast build rule for target.
+remote_gps_test/fast:
+	$(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/build
+.PHONY : remote_gps_test/fast
+
+#=============================================================================
 # Target rules for targets named run_tests_base_local_planner_gtest_line_iterator
 
 # Build rule for target.
@@ -5866,6 +5892,8 @@ help:
 	@echo "... remote_joy"
 	@echo "... sim_joy"
 	@echo "... remote_gps"
+	@echo "... robot_tf_broadcast"
+	@echo "... remote_gps_test"
 	@echo "... run_tests_base_local_planner_gtest_line_iterator"
 	@echo "... line_iterator"
 	@echo "... clean_test_results_base_local_planner"

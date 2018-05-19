@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -100,17 +111,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -122,16 +122,16 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target install/strip
+install/strip/fast: install/strip
 
-.PHONY : test/fast
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -180,6 +180,36 @@ remote_gps/fast:
 	cd /home/fgg/catkin_ws/build && $(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/build
 .PHONY : remote_gps/fast
 
+# Convenience name for target.
+navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/rule:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/rule
+.PHONY : navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/rule
+
+# Convenience name for target.
+robot_tf_broadcast: navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/rule
+
+.PHONY : robot_tf_broadcast
+
+# fast build rule for target.
+robot_tf_broadcast/fast:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/build
+.PHONY : robot_tf_broadcast/fast
+
+# Convenience name for target.
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/rule:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/rule
+.PHONY : navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/rule
+
+# Convenience name for target.
+remote_gps_test: navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/rule
+
+.PHONY : remote_gps_test
+
+# fast build rule for target.
+remote_gps_test/fast:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/build
+.PHONY : remote_gps_test/fast
+
 src/remote_gps.o: src/remote_gps.cpp.o
 
 .PHONY : src/remote_gps.o
@@ -207,6 +237,60 @@ src/remote_gps.cpp.s:
 	cd /home/fgg/catkin_ws/build && $(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.s
 .PHONY : src/remote_gps.cpp.s
 
+src/remote_gps_test.o: src/remote_gps_test.cpp.o
+
+.PHONY : src/remote_gps_test.o
+
+# target to build an object file
+src/remote_gps_test.cpp.o:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/src/remote_gps_test.cpp.o
+.PHONY : src/remote_gps_test.cpp.o
+
+src/remote_gps_test.i: src/remote_gps_test.cpp.i
+
+.PHONY : src/remote_gps_test.i
+
+# target to preprocess a source file
+src/remote_gps_test.cpp.i:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/src/remote_gps_test.cpp.i
+.PHONY : src/remote_gps_test.cpp.i
+
+src/remote_gps_test.s: src/remote_gps_test.cpp.s
+
+.PHONY : src/remote_gps_test.s
+
+# target to generate assembly for a file
+src/remote_gps_test.cpp.s:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps_test.dir/src/remote_gps_test.cpp.s
+.PHONY : src/remote_gps_test.cpp.s
+
+src/robot_tf_broadcast.o: src/robot_tf_broadcast.cpp.o
+
+.PHONY : src/robot_tf_broadcast.o
+
+# target to build an object file
+src/robot_tf_broadcast.cpp.o:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/src/robot_tf_broadcast.cpp.o
+.PHONY : src/robot_tf_broadcast.cpp.o
+
+src/robot_tf_broadcast.i: src/robot_tf_broadcast.cpp.i
+
+.PHONY : src/robot_tf_broadcast.i
+
+# target to preprocess a source file
+src/robot_tf_broadcast.cpp.i:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/src/robot_tf_broadcast.cpp.i
+.PHONY : src/robot_tf_broadcast.cpp.i
+
+src/robot_tf_broadcast.s: src/robot_tf_broadcast.cpp.s
+
+.PHONY : src/robot_tf_broadcast.s
+
+# target to generate assembly for a file
+src/robot_tf_broadcast.cpp.s:
+	cd /home/fgg/catkin_ws/build && $(MAKE) -f navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/build.make navigation_2d/nav2d_remote_gps/CMakeFiles/robot_tf_broadcast.dir/src/robot_tf_broadcast.cpp.s
+.PHONY : src/robot_tf_broadcast.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -215,15 +299,23 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... remote_gps"
-	@echo "... install/strip"
+	@echo "... robot_tf_broadcast"
 	@echo "... install/local"
-	@echo "... test"
+	@echo "... remote_gps_test"
+	@echo "... install/strip"
 	@echo "... src/remote_gps.o"
 	@echo "... src/remote_gps.i"
 	@echo "... src/remote_gps.s"
+	@echo "... src/remote_gps_test.o"
+	@echo "... src/remote_gps_test.i"
+	@echo "... src/remote_gps_test.s"
+	@echo "... src/robot_tf_broadcast.o"
+	@echo "... src/robot_tf_broadcast.i"
+	@echo "... src/robot_tf_broadcast.s"
 .PHONY : help
 
 

@@ -124,7 +124,7 @@ int main(int argc, char** argv)
 	//Read Goal in Map
 	double x,y;
 	printf("Give me the coordinates x y ");
-	scanf("%f%f",&x,&y);
+	scanf("%lf%lf",&x,&y);
 
 	
 	
