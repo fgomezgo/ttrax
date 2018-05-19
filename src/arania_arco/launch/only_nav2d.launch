@@ -23,8 +23,11 @@
     <node name="Remote" pkg="nav2d_remote" type="remote_joy" />
     -->
     
-    <!-- Launch tf broadcast that simulates GPS coordinates -->
+     <!-- Broadcasts map based in odom --> <!--
     <node name="start_mark_tf_broadcast" pkg="nav2d_remote_gps" type="start_mark_tf_broadcast" />
+    -->
+
+    <!-- Launch tf broadcast that simulates GPS coordinates -->
     <node name="robot_tf_broadcast" pkg="nav2d_remote_gps" type="robot_tf_broadcast" />
 		
     
