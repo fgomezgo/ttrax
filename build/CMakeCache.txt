@@ -989,7 +989,7 @@ ZED_DIR:PATH=/usr/local/zed
 ZED_FOUND:BOOL=TRUE
 
 //Path to a file.
-_file_name:FILEPATH=/home/fgg/catkin_ws/src/navigation/clear_costmap_recovery/test/clear_tests.launch
+_file_name:FILEPATH=/home/fgg/catkin_ws/src/navigation/costmap_2d/test/static_tests.launch
 
 //Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
@@ -1206,7 +1206,7 @@ laser_geometry_DIR:PATH=/opt/ros/kinetic/share/laser_geometry/cmake
 layers_LIB_DEPENDS:STATIC=general;costmap_2d;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libbondcpp.so
+lib:FILEPATH=/opt/ros/kinetic/lib/libtopic_tools.so
 
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/kinetic/share/map_msgs/cmake
@@ -1705,7 +1705,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=34
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -2157,7 +2157,7 @@ PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
 SDL_IMAGE_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SDL_IMAGE_LIBRARY
 SDL_IMAGE_LIBRARY-ADVANCED:INTERNAL=1
-SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDL.so;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread
+SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDL.so;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread
 TBB_CFLAGS:INTERNAL=
 TBB_CFLAGS_I:INTERNAL=
 TBB_CFLAGS_OTHER:INTERNAL=
