@@ -9,7 +9,7 @@ int main(int argc, char** argv){
     //Node handle
     ros::NodeHandle node;
     //Node Publisher
-    ros::Publisher gps_data = n.advertise<sensor_msgs::NavSatFix>("gps_data", 100);
+    ros::Publisher gps_data = node.advertise<sensor_msgs::NavSatFix>("gps_data", 100);
 
     //tf listener
     tf::TransformListener listener;
