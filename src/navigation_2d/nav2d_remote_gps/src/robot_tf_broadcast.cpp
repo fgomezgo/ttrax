@@ -19,18 +19,19 @@ int main(int argc, char** argv){
     while (node.ok()){
         tf::StampedTransform transform;
         try{
-        listener.lookupTransform("/base_link", "/map",  
-            ros::Time(0), transform);
+            listener.lookupTransform("/base_link", "/map",  
+                ros::Time(0), transform);
+            //Publish data from transform
+            sensor_msgs::NavSatFix msg;
+            msg.latitude = transform.getOrigin().y();
+            msg.longitude = transform.getOrigin().x();
+            gps_data.publish(msg);
         }
         catch (tf::TransformException ex){
             ROS_ERROR("%s",ex.what());
             ros::Duration(1.0).sleep();
         }
-        //Publish data from transform
-        sensor_msgs::NavSatFix msg;
-        msg.latitude = transform.getOrigin().y();
-        msg.longitude = transform.getOrigin().x();
-        gps_data.publish(msg);
+        
 /*
         turtlesim::Velocity vel_msg;
         vel_msg.angular = 4.0 * atan2(transform.getOrigin().y(),
