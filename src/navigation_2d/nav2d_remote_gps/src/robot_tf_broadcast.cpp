@@ -13,7 +13,7 @@ int main(int argc, char** argv){
     //Latitude and Longitude
     ros::Publisher gps_data = node.advertise<sensor_msgs::NavSatFix>("/GPS_goal/gps_data", 100);
     //Heading
-    ros::Publisher heading_data = node.advertise<std_msgs::Float64>("/GPS_goal/heading", 100);
+    ros::Publisher heading_data = node.advertise<std_msgs::Float64>("/GPS_goal/gps_heading", 100);
 
     //tf listener
     tf::TransformListener listener;
@@ -33,7 +33,10 @@ int main(int argc, char** argv){
 
             //double yaw = atan2(2.0*(transform.getRotation().q.y*transform.getRotation().q.z + transform.getRotation().q.w*transform.getRotation().q.x), 
             //transform.getRotation().q.w*transform.getRotation().q.w - transform.getRotation().q.x*transform.getRotation().q.x - transform.getRotation().q.y*transform.getRotation().q.y + transform.getRotation().q.z*transform.getRotation().q.z);
-            msg_heading.data = transform.getRotation().getAngle();
+            double yaw = atan2(0, 
+            transform.getRotation().m_floats[3]*transform.getRotation().m_floats[3] + transform.getRotation().m_floats[2]*transform.getRotation().m_floats[2]);
+            //msg_heading.data = transform.getRotation().getAngle();
+            msg_heading.data = yaw;
             gps_data.publish(msg_NavSat_Fix);
             heading_data.publish(msg_heading);
         }

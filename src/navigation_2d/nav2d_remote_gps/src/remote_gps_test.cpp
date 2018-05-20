@@ -17,12 +17,13 @@ struct Target{
 
 nav2d_operator::cmd cmd;
 
-//Publishers
-ros::Publisher cmd_pub = nh.advertise<nav2d_operator::cmd>("cmd", 100);
 
-void gpsDataCallback(const sensor_msgs/NavSatFix::ConstPtr& msg)
+//Publishers
+ros::Publisher cmd_pub;
+
+void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 {
-	double distance = sqrt(pow(msg.longitude-target.longitude,2)+pow(msg.latitude-target.latitude,2));
+	double distance = sqrt(pow(msg->longitude-target.longitude,2)+pow(msg->latitude-target.latitude,2));
 	if(distance > 3)
 		cmd.Velocity = 0.5;
 	else
@@ -30,9 +31,9 @@ void gpsDataCallback(const sensor_msgs/NavSatFix::ConstPtr& msg)
 	cmd_pub.publish(cmd);
 }
 
-void gpsHeadingCallback(const std_msgs/Float64::ConstPtr& msg)
+void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 {
-	cmd.Turn = msg.data/(2*PI);
+	cmd.Turn = msg->data/(2*PI);
 	cmd_pub.publish(cmd);
 }
 
@@ -43,14 +44,18 @@ int main(int argc, char** argv)
 {
 	//Node Initialization
 	ros::init(argc, argv, "remote_gps");
+
 	//Node handle
 	ros::NodeHandle nh;
 
+	//Publishers
+	cmd_pub = nh.advertise<nav2d_operator::cmd>("cmd", 100);
+	
 	//Subscribers
 	//Gps data (longitude, latitude)
-	ros::Subscriber sub = nh.subscribe("GPS_goal/gps_data", 100, gpsDataCallback);
+	ros::Subscriber sub_gps_data = nh.subscribe("GPS_goal/gps_data", 100, gpsDataCallback);
 	//Gps heading
-	ros::Subscriber sub = nh.subscribe("GPS_goal/gps_heading", 100, gpsHeadingCallback);
+	ros::Subscriber sub_gps_heading = nh.subscribe("GPS_goal/gps_heading", 100, gpsHeadingCallback);
 
 	
 
@@ -60,7 +65,7 @@ int main(int argc, char** argv)
 	cmd.Velocity = 0;
 
 	//Printf the current position
-	printf("The current position is: 0 0");
+	printf("The current position is: 0 0\n");
 	//Read Goal in Map
 	
 	printf("Give me the coordinates (longitude, latitude) ");
