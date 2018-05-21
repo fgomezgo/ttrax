@@ -227,6 +227,7 @@ class DEFAULT
         (*_i)->getValue(config, val);
 
         if("scan_height"==(*_i)->name){scan_height = boost::any_cast<int>(val);}
+        if("scan_offset"==(*_i)->name){scan_offset = boost::any_cast<double>(val);}
         if("scan_time"==(*_i)->name){scan_time = boost::any_cast<double>(val);}
         if("range_min"==(*_i)->name){range_min = boost::any_cast<double>(val);}
         if("range_max"==(*_i)->name){range_max = boost::any_cast<double>(val);}
@@ -235,6 +236,7 @@ class DEFAULT
     }
 
     int scan_height;
+double scan_offset;
 double scan_time;
 double range_min;
 double range_max;
@@ -250,6 +252,8 @@ std::string output_frame_id;
 
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       int scan_height;
+//#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      double scan_offset;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double scan_time;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -401,17 +405,27 @@ DepthConfig::GroupDescription<DepthConfig::DEFAULT, DepthConfig> Default("Defaul
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.scan_height = 500;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.scan_height = 1;
+      __default__.scan_height = 3;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<int>("scan_height", "int", 0, "Height of the laser band (in pixels).", "", &DepthConfig::scan_height)));
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<int>("scan_height", "int", 0, "Height of the laser band (in pixels).", "", &DepthConfig::scan_height)));
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __min__.scan_offset = 0.0;
+//#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __max__.scan_offset = 1.0;
+//#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __default__.scan_offset = 0.01;
+//#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      Default.abstract_parameters.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("scan_offset", "double", 0, "Row set as the center of laserscan.", "", &DepthConfig::scan_offset)));
+//#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __param_descriptions__.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("scan_offset", "double", 0, "Row set as the center of laserscan.", "", &DepthConfig::scan_offset)));
+//#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.scan_time = 0.0;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.scan_time = 1.0;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.scan_time = 0.033;
+      __default__.scan_time = 0.01;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("scan_time", "double", 0, "Time for the entire scan sweep.", "", &DepthConfig::scan_time)));
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -421,7 +435,7 @@ DepthConfig::GroupDescription<DepthConfig::DEFAULT, DepthConfig> Default("Defaul
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.range_min = 10.0;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.range_min = 0.45;
+      __default__.range_min = 0.1;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("range_min", "double", 0, "Minimum reported range (in meters).", "", &DepthConfig::range_min)));
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -431,7 +445,7 @@ DepthConfig::GroupDescription<DepthConfig::DEFAULT, DepthConfig> Default("Defaul
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.range_max = 10.0;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.range_max = 10.0;
+      __default__.range_max = 5.0;
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(DepthConfig::AbstractParamDescriptionConstPtr(new DepthConfig::ParamDescription<double>("range_max", "double", 0, "Maximum reported range (in meters).", "", &DepthConfig::range_max)));
 //#line 292 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
