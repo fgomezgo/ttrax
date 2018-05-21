@@ -83,6 +83,10 @@ void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 	//Calculate angle between heading and toTarget
 	toHeading = Vector(cos(heading),sin(heading));
 	double angle = angleBetween(toTarget,toHeading);
+	double cP = crossProduct(toTarget,toHeading);
+	ROS_INFO("CrossProduct %lf", cP);
+	/*if(cP < 0)
+		angle *= -1.0;*/
 	ROS_INFO("Angle %lf", angle);
 
 	cmd.Turn = (angle)/(PI);
