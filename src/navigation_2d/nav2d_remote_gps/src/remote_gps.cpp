@@ -58,12 +58,26 @@ Vector toHeading = Vector(1,0);
 //Flag to end program
 bool endProgram = false;
 
+//Flag for the first time it enters the gpsDataCallback
+bool firstTimeInCallback = true;
+
+//Target init
+Target init;
 
 void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 {
+	if(firstTimeInCallback){
+		//Add && Printf the current position
+		init.longitude = msg->longitude;
+		init.latitude = msg->latitude;
+		printf("The current position is: %lf %lf\n",init.longitude,init.latitude);
+		firstTimeInCallback = false;
+		return;
+	}
 	//Calculate vector between position and target
-	toTarget = Vector(target.longitude-msg->longitude,target.latitude-msg->latitude);
+	toTarget = Vector(target.longitude-msg->longitude-2*(init.longitude),target.latitude-msg->latitude-2*(init.latitude));
 	ROS_INFO("Position x %lf y %lf", msg->longitude, msg->latitude);
+	ROS_INFO("Position in map x %lf y %lf", msg->longitude-init.longitude, msg->latitude-init.latitude);
 	
 	//Calculate distance between the 2 points
 	double distance = toTarget.magnitude();
@@ -136,10 +150,10 @@ int main(int argc, char** argv)
 	cmd.Turn = 0;
 	cmd.Velocity = 0;
 
-	//Printf the current position
-	printf("The current position is: 0 0\n");
+	//Wait untill first entry
+	while(firstTimeInCallback);
+
 	//Read Goal in Map
-	
 	printf("Give me the coordinates (longitude, latitude) ");
 	scanf("%lf%lf",&target.longitude,&target.latitude);
 
