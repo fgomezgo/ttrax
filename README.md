@@ -39,3 +39,28 @@ For navigation package to function properly, be sure to install the required dep
 rosdep install --from-paths ~/catkin_ws/src/navigation/ --ignore-src --rosdistro=kinetic -y
 rosdep install --from-paths ~/catkin_ws/src/navigation_2d/ --ignore-src --rosdistro=kinetic -y
 ```
+
+## Ariania-Arco for Jetson-Tx2 (Tegra)
+
+-For [Ros](http://wiki.ros.org/kinetic/Installation/Ubuntu) in Tegra:
+
+Commands
+```
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+
+sudo apt-get update
+
+sudo apt-get install ros-kinetic-ros-base
+
+sudo c_rehash /etc/ssl/certs
+
+sudo update-ca-certificates
+
+sudo rosdep init
+
+rosdep update
+
+sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
+```
