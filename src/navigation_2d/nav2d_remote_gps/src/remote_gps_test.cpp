@@ -35,7 +35,7 @@ double dotProduct(const Vector &a, const Vector &b){
 }
 //Cross product
 double crossProduct(const Vector &a, const Vector &b){
-	return a.x*b.y+a.y*b.x;
+	return a.x*b.y-a.y*b.x;
 }
 //Angle between 2 vectors
 double angleBetween(Vector a, Vector b){
@@ -55,12 +55,16 @@ ros::Publisher cmd_pub;
 Vector toTarget = Vector(1,0);
 Vector toHeading = Vector(1,0);
 
+//Flag to end program
+bool endProgram = false;
+
 
 void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 {
 	//Calculate vector between position and target
 	toTarget = Vector(target.longitude-msg->longitude,target.latitude-msg->latitude);
-	ROS_INFO("toTarget x %lf y %lf", toTarget.x, toTarget.y);
+	ROS_INFO("Position x %lf y %lf", msg->longitude, msg->latitude);
+	
 	//Calculate distance between the 2 points
 	double distance = toTarget.magnitude();
 	ROS_INFO("Distance %lf", distance);
@@ -70,6 +74,14 @@ void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 	else
 		cmd.Velocity = 0.16*distance;
 	cmd_pub.publish(cmd);
+
+	//End if minError is reached
+	if(distance < 1){
+		cmd.Velocity = 0.0;
+		cmd.Turn = 0.0;
+		cmd_pub.publish(cmd);
+		endProgram = true;
+	}
 }
 
 void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
@@ -84,9 +96,13 @@ void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 	toHeading = Vector(cos(heading),sin(heading));
 	double angle = angleBetween(toTarget,toHeading);
 	double cP = crossProduct(toTarget,toHeading);
+	ROS_INFO("Vector Target x %lf y %lf", toTarget.x, toTarget.y);
+	ROS_INFO("Vector Heading x %lf y %lf", toHeading.x, toHeading.y);
+	if(angle < 1.7){
+		if(cP < 0)
+			angle *= -1.0;
+	}
 	ROS_INFO("CrossProduct %lf", cP);
-	/*if(cP < 0)
-		angle *= -1.0;*/
 	ROS_INFO("Angle %lf", angle);
 
 	cmd.Turn = (angle)/(PI);
@@ -115,8 +131,6 @@ int main(int argc, char** argv)
 	//Gps heading
 	ros::Subscriber sub_gps_heading = nh.subscribe("GPS_goal/gps_heading", 100, gpsHeadingCallback);
 
-	
-
 	//Initialize cmd Mode
 	cmd.Mode = 0;
 	cmd.Turn = 0;
@@ -129,8 +143,13 @@ int main(int argc, char** argv)
 	printf("Give me the coordinates (longitude, latitude) ");
 	scanf("%lf%lf",&target.longitude,&target.latitude);
 
-	
-	ros::spin();
+	while(ros::ok()){
+		if(endProgram){
+			ROS_INFO("Target reached!");
+			return 0;
+		}
+		ros::spinOnce();	
+	}
 	
 	return 0;
 }
