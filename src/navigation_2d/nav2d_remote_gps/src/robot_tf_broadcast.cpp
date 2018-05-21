@@ -20,6 +20,10 @@ int main(int argc, char** argv){
 
     //Simulate GPS update freq of 1 Hz
     ros::Rate rate(1.0);
+
+    //Variables to get rotation
+    double roll,pitch,yaw;
+
     while (node.ok()){
         tf::StampedTransform transform;
         try{
@@ -31,11 +35,8 @@ int main(int argc, char** argv){
             msg_NavSat_Fix.latitude = transform.getOrigin().y();
             msg_NavSat_Fix.longitude = transform.getOrigin().x();
 
-            //double yaw = atan2(2.0*(transform.getRotation().q.y*transform.getRotation().q.z + transform.getRotation().q.w*transform.getRotation().q.x), 
-            //transform.getRotation().q.w*transform.getRotation().q.w - transform.getRotation().q.x*transform.getRotation().q.x - transform.getRotation().q.y*transform.getRotation().q.y + transform.getRotation().q.z*transform.getRotation().q.z);
-            double yaw = atan2(0, 
-            transform.getRotation().m_floats[3]*transform.getRotation().m_floats[3] + transform.getRotation().m_floats[2]*transform.getRotation().m_floats[2]);
-            //msg_heading.data = transform.getRotation().getAngle();
+            transform.getBasis().getRPY(roll,pitch,yaw);
+
             msg_heading.data = yaw;
             gps_data.publish(msg_NavSat_Fix);
             heading_data.publish(msg_heading);

@@ -15,25 +15,79 @@ struct Target{
 	Target(){}
 } target;
 
+struct Vector{
+	double x,y;
+	Vector(){}
+	Vector(const double &_x, const double &_y){
+		x = _x;
+		y = _y;
+	}
+	//Vector's magnitude
+	double magnitude(){
+		return sqrt(x*x+y*y);
+	}
+};
+//Methods for vectors
+
+//Dot product
+double dotProduct(const Vector &a, const Vector &b){
+	return a.x*b.x+a.y*b.y;
+}
+//Cross product
+double crossProduct(const Vector &a, const Vector &b){
+	return a.x*b.y+a.y*b.x;
+}
+//Angle between 2 vectors
+double angleBetween(Vector a, Vector b){
+	return acos(dotProduct(a,b)/(a.magnitude()*b.magnitude()));
+}
+
+
 nav2d_operator::cmd cmd;
 
 
 //Publishers
 ros::Publisher cmd_pub;
 
+//To calculate cmd's Turn
+
+//Vector formed between current position and target
+Vector toTarget = Vector(1,0);
+Vector toHeading = Vector(1,0);
+
+
 void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 {
-	double distance = sqrt(pow(msg->longitude-target.longitude,2)+pow(msg->latitude-target.latitude,2));
+	//Calculate vector between position and target
+	toTarget = Vector(target.longitude-msg->longitude,target.latitude-msg->latitude);
+	ROS_INFO("toTarget x %lf y %lf", toTarget.x, toTarget.y);
+	//Calculate distance between the 2 points
+	double distance = toTarget.magnitude();
+	ROS_INFO("Distance %lf", distance);
+	//Threshold to slowdown velocity
 	if(distance > 3)
 		cmd.Velocity = 0.5;
 	else
-		cmd.Velocity = 0.2;
+		cmd.Velocity = 0.16*distance;
 	cmd_pub.publish(cmd);
 }
 
 void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 {
-	cmd.Turn = msg->data/(2*PI);
+	double heading = msg->data;
+	//ROS_INFO("Heading %lf", heading);
+	if(heading < 0)
+		heading += 2*PI;
+	ROS_INFO("Heading %lf", heading);
+	
+	//Calculate angle between heading and toTarget
+	toHeading = Vector(cos(heading),sin(heading));
+	double angle = angleBetween(toTarget,toHeading);
+	ROS_INFO("Angle %lf", angle);
+
+	cmd.Turn = (angle)/(PI);
+	ROS_INFO("Turn %lf", double(cmd.Turn));
+
 	cmd_pub.publish(cmd);
 }
 
