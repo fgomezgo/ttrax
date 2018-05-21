@@ -61,6 +61,9 @@ navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.o: /
 navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
 navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.o: /opt/ros/kinetic/include/sensor_msgs/Joy.h
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.o: /opt/ros/kinetic/include/sensor_msgs/NavSatFix.h
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.o: /opt/ros/kinetic/include/sensor_msgs/NavSatStatus.h
+navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.o: /opt/ros/kinetic/include/std_msgs/Float64.h
 navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.o: /opt/ros/kinetic/include/std_srvs/Trigger.h
 navigation_2d/nav2d_remote_gps/CMakeFiles/remote_gps.dir/src/remote_gps.cpp.o: /opt/ros/kinetic/include/std_srvs/TriggerRequest.h
