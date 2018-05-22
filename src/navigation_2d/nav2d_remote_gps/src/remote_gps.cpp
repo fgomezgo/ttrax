@@ -5,6 +5,7 @@
 #include <nav2d_navigator/commands.h>
 #include <sensor_msgs/NavSatFix.h>
 #include <std_msgs/Float64.h>
+#include <sensor_msgs/JointState.h>
 
 //Constants for GPS to m conversion
 const double LONG_TO_M = 1.7286720451827369;
@@ -133,8 +134,11 @@ void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 	cmd_pub.publish(cmd);
 }
 
-
-
+void gpsImuCallback(const std_msgs::Float64::ConstPtr& msg)
+{
+	double heading = msg->data;
+	ROS_INFO("IMU Heading %lf", heading);
+}
 
 int main(int argc, char** argv)
 {
@@ -152,6 +156,8 @@ int main(int argc, char** argv)
 	ros::Subscriber sub_gps_data = nh.subscribe("GPS_goal/gps_data", 100, gpsDataCallback);
 	//Gps heading
 	ros::Subscriber sub_gps_heading = nh.subscribe("GPS_goal/gps_heading", 100, gpsHeadingCallback);
+	//IMU heading
+	ros::Subscriber sub_imu_heading = nh.subscribe("GPS_goal/IMU_heading", 100, gpsImuCallback);
 
 	//Initialize cmd Mode
 	cmd.Mode = 0;
