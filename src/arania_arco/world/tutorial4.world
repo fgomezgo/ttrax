@@ -1,7 +1,7 @@
 include "p3at.inc"
 include "floorplan.inc"
 
-name                    "Navigation-2D Tutorial"
+name                    "Navigation-2D Multi-Robot Tutorial"
 interval_sim            100
 quit_time                 0
 resolution                0.025
@@ -13,14 +13,21 @@ threads                 2
 floorplan
 ( 
   name "tutorial"
-  bitmap "empty.png"
+  bitmap "autolab_fill.png"
   size [34 30 1.0]
   pose [0 0 0 0]
 )
 
-# Put a single robot into the world
+# Put two robots into the world
 pioneer3at
 (
-  name "robot"
-  pose [0 0 0 0]
+  name "robot1"
+  pose [0 -1 0 45]
+)
+
+# Put two robots into the world
+pioneer3at
+(
+  name "robot2"
+  pose [0 -2 0 0]
 )
