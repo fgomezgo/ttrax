@@ -6,6 +6,11 @@
 #include <sensor_msgs/NavSatFix.h>
 #include <std_msgs/Float64.h>
 
+//Constants for GPS to m conversion
+const double LONG_TO_M = 1.7286720451827369;
+const double LAT_TO_M = 1.849419214323556;
+const double GPS_FACTOR = 0.00001;
+
 
 //Pi
 const double PI = 3.14159265359;
@@ -24,7 +29,10 @@ struct Vector{
 	}
 	//Vector's magnitude
 	double magnitude(){
-		return sqrt(x*x+y*y);
+		double xGPS = x/GPS_FACTOR*LONG_TO_M;
+		double yGPS = y/GPS_FACTOR*LAT_TO_M;
+		return sqrt(xGPS*xGPS+yGPS*yGPS);
+		//return sqrt(x*x+y*y);
 	}
 };
 //Methods for vectors
