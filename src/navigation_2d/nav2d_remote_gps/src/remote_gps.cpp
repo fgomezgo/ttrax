@@ -8,8 +8,10 @@
 #include <sensor_msgs/JointState.h>
 
 //Constants for GPS to m conversion
-const double LONG_TO_M = 1.7286720451827369;
-const double LAT_TO_M = 1.849419214323556;
+//const double LONG_TO_M = 1.7286720451827369;
+const double LONG_TO_M = 1.0436052429987237;
+//const double LAT_TO_M = 1.849419214323556;
+const double LAT_TO_M = 1.0392838770711008;
 const double GPS_FACTOR = 0.00001;
 
 
