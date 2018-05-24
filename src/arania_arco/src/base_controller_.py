@@ -36,8 +36,8 @@ odom_quat = Quaternion
 
 #Callback para recivir los comandos de velocidad
 def cmd_velCallback(twist_aux):
-	pupr = rospy.Publisher('drive_system_right/setpoint', Float64, queue_size=10)
-	pupl = rospy.Publisher('drive_system_left/setpoint', Float64, queue_size=10)
+	pupr = rospy.Publisher('/drive_system_left/setpoint', Float64, queue_size=10)
+	pupl = rospy.Publisher('/drive_system_right/setpoint', Float64, queue_size=10)
 	twist = twist_aux
 	vel_x = twist_aux.linear.x
 	vel_th = twist_aux.angular.z
@@ -47,18 +47,18 @@ def cmd_velCallback(twist_aux):
 	if(vel_x == 0):
 		#drift
 		right_vel = vel_th * width_robot / 2.0
-		left_vel = (-1) * right_vel
+		left_vel = (-1.0) * right_vel
 	elif(vel_th == 0):
 		#frente/reversa
 		left_vel = right_vel = vel_x
 	else:
 		#curvas
 		left_vel = vel_x - vel_th * width_robot / 2.0
-		righ_vel = vel_x + vel_th * width_robot / 2.0
+		right_vel = vel_x + (vel_th * width_robot )/ 2.0
 	#vl = left_vel
 	#vr = right_vel
-	pupr.publish(left_vel*0.3)
-	pupl.publish(right_vel*0.3)
+	pupr.publish(right_vel)
+	pupl.publish(left_vel)
 
 #callback de los encoders para saver la velocidad
 def encvelR(vel):
@@ -80,13 +80,9 @@ def realVel():
 		current_time = rospy.get_rostime()
 		dt = (current_time.nsecs - last_time.nsecs)*1000000000
 		last_time = current_time
-		dt
-		if dt == 0:
-			velxy = 0
-			velth = 0
-		else: 
-			velxy = dxy / dt
-			velth = dth / dt
+		dt 
+		velxy = dxy / dt
+		velth = dth / dt
 
 		#odometria
 		if (vel_enc_right == 0):
@@ -113,5 +109,4 @@ def realVel():
 if __name__ == '__main__':
 	try:
 		realVel()
-	except rospy.ROSInterruptException: 
-		pass
+	except rospy.ROSInterruptException: pass
