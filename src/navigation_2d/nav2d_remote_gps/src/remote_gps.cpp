@@ -79,7 +79,7 @@ void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 		//Add && Printf the current position
 		init.longitude = msg->longitude;
 		init.latitude = msg->latitude;
-		printf("The current position is: %lf %lf\n",init.longitude,init.latitude);
+		ROS_INFO("The current position is: %lf %lf\n",init.longitude,init.latitude);
 		firstTimeInCallback = false;
 		return;
 	}
@@ -144,31 +144,38 @@ int main(int argc, char** argv)
 {
 	//Node Initialization
 	ros::init(argc, argv, "remote_gps");
-
+	
 	//Node handle
 	ros::NodeHandle nh;
+	
+	//Ros Rate 5Hz
+	ros::Rate loop_rate(5);	
 
 	//Publishers
 	cmd_pub = nh.advertise<nav2d_operator::cmd>("cmd", 100);
 	
 	//Subscribers
 	//Gps data (longitude, latitude)
-	ros::Subscriber sub_gps_data = nh.subscribe("GPS_goal/gps_data", 100, gpsDataCallback);
+	ros::Subscriber sub_gps_data = nh.subscribe("GPS_goal/gps_data", 10, gpsDataCallback);
 	//Gps heading
-	ros::Subscriber sub_gps_heading = nh.subscribe("GPS_goal/gps_heading", 100, gpsHeadingCallback);
+	ros::Subscriber sub_gps_heading = nh.subscribe("GPS_goal/gps_heading", 10, gpsHeadingCallback);
 	//IMU heading
-	ros::Subscriber sub_imu_heading = nh.subscribe("GPS_goal/IMU_heading", 100, gpsImuCallback);
+	ros::Subscriber sub_imu_heading = nh.subscribe("GPS_goal/IMU_heading", 10, gpsImuCallback);
 
 	//Initialize cmd Mode
 	cmd.Mode = 0;
 	cmd.Turn = 0;
 	cmd.Velocity = 0;
-
+	ROS_INFO("Waiting first callback");
+	ros::spinOnce();
 	//Wait untill first entry
-	while(firstTimeInCallback);
-
+	while(firstTimeInCallback){
+		ros::spinOnce();
+	}
+	ROS_INFO("DONE");
+	
 	//Read Goal in Map
-	printf("Give me the coordinates (longitude, latitude) ");
+	ROS_INFO("Give me the coordinates (longitude, latitude) ");
 	scanf("%lf%lf",&target.longitude,&target.latitude);
 
 	while(ros::ok()){

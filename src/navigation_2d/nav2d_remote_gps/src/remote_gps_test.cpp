@@ -138,6 +138,9 @@ int main(int argc, char** argv)
 	//Node handle
 	ros::NodeHandle nh;
 
+	//Ros Rate 5Hz
+	ros::Rate loop_rate(5);	
+
 	//Publishers
 	cmd_pub = nh.advertise<nav2d_operator::cmd>("cmd", 100);
 	
@@ -151,12 +154,16 @@ int main(int argc, char** argv)
 	cmd.Mode = 0;
 	cmd.Turn = 0;
 	cmd.Velocity = 0;
-
+	ROS_INFO("Waiting first callback");
+	ros::spinOnce();
 	//Wait untill first entry
-	while(firstTimeInCallback);
-
+	while(firstTimeInCallback){
+		ros::spinOnce();
+	}
+	ROS_INFO("DONE");
+	
 	//Read Goal in Map
-	printf("Give me the coordinates (longitude, latitude) ");
+	ROS_INFO("Give me the coordinates (longitude, latitude) ");
 	scanf("%lf%lf",&target.longitude,&target.latitude);
 
 	while(ros::ok()){
