@@ -419,7 +419,6 @@ class RoverComms():
     #############################################################
     def joyCallBack(self, data):
     #############################################################
-        """
         # Left drive system Controllers [0 - 2]
         self.joyL = int(round(data.axes[1] * 100))
         # Right drive system Controllers [3 - 5]
@@ -442,7 +441,7 @@ class RoverComms():
         self.CR = data.buttons[0]
         # Cooling System (Relays)
         self.SH = data.buttons[8]
-        self.OP = data.buttons[9]"""
+        self.OP = data.buttons[9]
 
     #############################################################
     def left_speed_cb(self, data):

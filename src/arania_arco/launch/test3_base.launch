@@ -43,7 +43,7 @@
 		<param name="min_loop_frequency" value="4" />
      </node>
 
-	<!-- RVIZ visualization -->
-	<node name="RVIZ" pkg="rviz" type="rviz" args=" -d $(find nav2d_tutorials)/param/tutorial3.rviz" />
+	<!-- RVIZ visualization 
+	<node name="RVIZ" pkg="rviz" type="rviz" args=" -d $(find nav2d_tutorials)/param/tutorial3.rviz" />-->
 
 </launch>

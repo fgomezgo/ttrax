@@ -13,9 +13,12 @@ from sensor_msgs.msg import JointState
 from tf import TransformBroadcaster
 from nav_msgs.msg import Odometry
 
+#MAXIMUM
+max_vel = 0.65
+max_th = 0.65
 
 # Base Controller Variables
-width_robot = 2
+width_robot = 0.85
 vr = 0.0
 right_vel = 0.0
 right_vel_old = 0.0
@@ -50,17 +53,23 @@ def cmd_velCallback(twist_aux):
 		#drift
 		right_vel = vel_th * width_robot / 2.0
 		left_vel = (-1) * right_vel
+		right_vel = right_vel*max_th
+		left_vel = left_vel*max_th 
 	elif(vel_th == 0):
 		#frente/reversa 
-		left_vel = right_vel = vel_x
+		left_vel = right_vel = vel_x*max_vel
 	else:
 		#curvas
 		left_vel = vel_x - vel_th * width_robot / 2.0
-		righ_vel = vel_x + vel_th * width_robot / 2.0
+		right_vel = vel_x + vel_th * width_robot / 2.0
+		tot_vel = right_vel + left_vel
+		right_vel = (right_vel/tot_vel)*max_vel
+		left_vel = (left_vel/tot_vel)*max_vel
 	#vl = left_vel
 	#vr = right_vel
-	pupr.publish(left_vel*0.83)
-	pupl.publish(right_vel*0.83)
+	pupr.publish(left_vel)
+	pupl.publish(right_vel)
+	print "L:",left_vel,"  R:",right_vel
 
 #callback de los encoders para saber la velocidad
 def encvelR(vel):
