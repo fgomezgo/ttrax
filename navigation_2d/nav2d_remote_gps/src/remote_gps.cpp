@@ -1,5 +1,6 @@
 #include <ros/ros.h>
 #include <sensor_msgs/Joy.h>
+#include <geometry_msgs/Twist.h>
 #include <std_srvs/Trigger.h>
 #include <nav2d_operator/cmd.h>
 #include <nav2d_navigator/commands.h>
