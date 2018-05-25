@@ -1,8 +1,0 @@
-prefix=/home/fgg/catkin_ws/devel
-
-Name: nav2d_operator
-Description: Description of nav2d_operator
-Version: 0.3.2
-Cflags: -I/home/fgg/catkin_ws/devel/include -I/home/fgg/catkin_ws/src/navigation_2d/nav2d_operator/include
-Libs: -L/home/fgg/catkin_ws/devel/lib -lRobotOperator
-Requires: roscpp message_runtime tf costmap_2d sensor_msgs
