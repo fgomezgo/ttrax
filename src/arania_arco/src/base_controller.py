@@ -51,7 +51,7 @@ def cmd_velCallback(twist_aux):
 		right_vel = vel_th * width_robot / 2.0
 		left_vel = (-1) * right_vel
 	elif(vel_th == 0):
-		#frente/reversa
+		#frente/reversa 
 		left_vel = right_vel = vel_x
 	else:
 		#curvas
