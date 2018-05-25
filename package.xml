@@ -5,8 +5,12 @@
 	<description>
 		This package provides Autonomous mode to Eagle-x's TTrax-rover.
 	</description>
-	<maintainer email="a01209914@itesm.mx">Fabian Gomez<maintainer/>
-	<maintainer email="a01209351@itesm.mx">Ivan Ochoa<maintainer/>
+	<maintainer email="a01209914@itesm.mx">
+		Fabian Gomez
+	</maintainer>
+	<maintainer email="a01209351@itesm.mx">
+		Ivan Ochoa
+	</maintainer>
 
 	<license>BSD</license>
 	<buildtool_depend>catkin</buildtool_depend>
