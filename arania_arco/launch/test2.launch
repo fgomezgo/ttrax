@@ -1,0 +1,59 @@
+<launch>
+
+    <!-- nav2d -->
+
+<!-- Some general parameters -->
+	<param name="use_sim_time" value="true" />
+    <rosparam file="$(find nav2d_tutorials)/param/ros.yaml"/>
+
+
+    
+   
+
+    
+
+    <node name="TcpClient" pkg="arania_arco" type="TcpClient.py" >
+		<remap from="location_heading" to="GPS_goal/gps_heading"/>
+		<remap from="IMU_heading" to="GPS_goal/IMU_heading"/>
+        <remap from="rover/coordinates" to="GPS_goal/gps_data"/>
+	</node>
+
+    <node name="base_controller" pkg="arania_arco" type="base_controller.py" >
+		<remap from="nose" to="cmd_vel"/>
+	</node>
+
+<!-- Controller for drone's X axis -->
+    <node name="controller" pkg="pid" type="controller" ns="drive_system_left" output="screen" >
+      <param name="node_name" value="rover_left_side" />
+      <param name="Kp" value="28.0" />
+      <param name="Ki" value="50.0" />
+      <param name="Kd" value="0.0" />
+      <param name="upper_limit" value="100" />
+      <param name="lower_limit" value="-100" />
+      <param name="windup_limit" value="1" />
+      <param name="cutoff_frequency" value="1" />
+      <param name="diagnostic_period" value="0.25" />
+      <param name="max_loop_frequency" value="7.0" />
+      <param name="min_loop_frequency" value="4.0" />
+     </node>
+    
+     <!-- Controller for drone's Y axis -->
+
+    <node name="controller" pkg="pid" type="controller" ns="drive_system_right" output="screen" >
+      <param name="node_name" value="rover_right_side" />
+      <param name="Kp" value="28.0" />
+      <param name="Ki" value="50.0" />
+      <param name="Kd" value="0.0" />
+      <param name="upper_limit" value="100" />
+      <param name="lower_limit" value="-100" />
+      <param name="windup_limit" value="1" />
+      <param name="cutoff_frequency" value="1" />
+      <param name="diagnostic_period" value="0.25" />
+      <param name="max_loop_frequency" value="7" />
+      <param name="min_loop_frequency" value="4" />
+     </node>
+
+	
+ 
+    
+</launch>

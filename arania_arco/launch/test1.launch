@@ -1,0 +1,83 @@
+<launch>
+
+    <!-- nav2d -->
+    <!-- Some general parameters -->
+	<param name="use_sim_time" value="true" />
+    <rosparam file="$(find nav2d_tutorials)/param/ros.yaml"/>
+
+    <!-- Start Stage simulator with a given environment -->
+	<node name="Stage" pkg="stage_ros" type="stageros" args="$(find arania_arco)/world/empty.world">
+		<param name="base_watchdog_timeout" value="0" />
+	</node>
+
+	<!-- Start the Operator to control the simulated robot -->
+	<node name="Operator" pkg="nav2d_operator" type="operator" >
+		<remap from="scan" to="base_scan"/>
+		<rosparam file="$(find nav2d_tutorials)/param/operator.yaml"/>
+		<rosparam file="$(find nav2d_tutorials)/param/costmap.yaml" ns="local_map" />
+	</node>
+
+	<!-- Start the joystick-driver and remote-controller for operation-->
+    <!--
+	<node name="Joystick" pkg="joy" type="joy_node" />
+    <node name="Remote" pkg="nav2d_remote" type="remote_joy" />
+    -->
+    
+     <!-- Broadcasts map based in odom --> <!--
+    <node name="start_mark_tf_broadcast" pkg="nav2d_remote_gps" type="start_mark_tf_broadcast" />
+    -->
+
+    <!-- Launch tf broadcast that simulates GPS coordinates -->
+    <!--
+    <node name="robot_tf_broadcast" pkg="nav2d_remote_gps" type="robot_tf_broadcast" />
+	-->
+
+    
+
+    <node name="TcpClient" pkg="arania_arco" type="TcpClient.py" >
+		<remap from="location_heading" to="GPS_goal/gps_heading"/>
+		<remap from="IMU_heading" to="GPS_goal/IMU_heading"/>
+        <remap from="rover/coordinates" to="GPS_goal/gps_data"/>
+	</node>
+
+    <node name="base_controller" pkg="arania_arco" type="base_controller.py" >
+		<remap from="nose" to="cmd_vel"/>
+	</node>
+
+<!-- Controller for drone's X axis -->
+    <node name="controller" pkg="pid" type="controller" ns="drive_system_left" output="screen" >
+      <param name="node_name" value="rover_left_side" />
+      <param name="Kp" value="28.0" />
+      <param name="Ki" value="50.0" />
+      <param name="Kd" value="0.0" />
+      <param name="upper_limit" value="100" />
+      <param name="lower_limit" value="-100" />
+      <param name="windup_limit" value="1" />
+      <param name="cutoff_frequency" value="1" />
+      <param name="diagnostic_period" value="0.25" />
+      <param name="max_loop_frequency" value="7.0" />
+      <param name="min_loop_frequency" value="4.0" />
+     </node>
+    
+     <!-- Controller for drone's Y axis -->
+
+    <node name="controller" pkg="pid" type="controller" ns="drive_system_right" output="screen" >
+      <param name="node_name" value="rover_right_side" />
+      <param name="Kp" value="28.0" />
+      <param name="Ki" value="50.0" />
+      <param name="Kd" value="0.0" />
+      <param name="upper_limit" value="100" />
+      <param name="lower_limit" value="-100" />
+      <param name="windup_limit" value="1" />
+      <param name="cutoff_frequency" value="1" />
+      <param name="diagnostic_period" value="0.25" />
+      <param name="max_loop_frequency" value="7" />
+      <param name="min_loop_frequency" value="4" />
+     </node>
+
+	<!-- RVIZ to view the visualization -->
+
+    <node name="RVIZ" pkg="rviz" type="rviz" args=" -d $(find nav2d_tutorials)/param/tutorial1.rviz" />
+ 
+    
+</launch>
