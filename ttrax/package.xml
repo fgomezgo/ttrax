@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<package format = "2">
+
+<package>
 	<name>ttrax</name>
 	<version>1.1.0</version>
 	<description>
@@ -11,37 +12,39 @@
 	<maintainer email="a01209351@itesm.mx">
 		Ivan Ochoa
 	</maintainer>
-
 	<license>BSD</license>
+
 	<buildtool_depend>catkin</buildtool_depend>
-
-	<!--
-	<depend>arania_arco</depend>
-  	<depend>depthimage_to_laserscan</depend>
-  	<depend>navigation</depend>
-  	<depend>navigation_2d</depend>
-	<depend>zed_wrapper</depend>
-	-->
-	<!--
-	<build_depend>arania_arco</build_depend>
-  	<build_depend>depthimage_to_laserscan</build_depend>
-  	<build_depend>navigation</build_depend>
-  	<build_depend>navigation_2d</build_depend>
-	<build_depend>zed_wrapper</build_depend>
-	-->
-
-	<build_export_depend>arania_arco</build_export_depend>
-  	<build_export_depend>depthimage_to_laserscan</build_export_depend>
-  	<build_export_depend>navigation</build_export_depend>
-  	<build_export_depend>navigation_2d</build_export_depend>
-	<build_export_depend>zed_wrapper</build_export_depend>
-
-	<exec_depend>arania_arco</exec_depend>
-  	<exec_depend>depthimage_to_laserscan</exec_depend>
-  	<exec_depend>navigation</exec_depend>
-  	<exec_depend>navigation_2d</exec_depend>
-	<exec_depend>zed_wrapper</exec_depend>
-
+	<run_depend>arania_arco</run_depend>
+	<run_depend>depthimage_to_laserscan</run_depend>
+	<run_depend>navigation</run_depend>
+	<run_depend>navigation_2d</run_depend>
+	<run_depend>zed-ros-wrapper</run_depend>
+	<run_depend>nav2d_msgs</run_depend>
+  	<run_depend>nav2d_tutorials</run_depend>
+  	<run_depend>nav2d_operator</run_depend>
+  	<run_depend>nav2d_navigator</run_depend>
+  	<run_depend>nav2d_localizer</run_depend>
+  	<run_depend>nav2d_remote</run_depend>
+  	<run_depend>nav2d_karto</run_depend>
+  	<run_depend>nav2d_exploration</run_depend>
+	<run_depend>amcl</run_depend>
+	<run_depend>carrot_planner</run_depend>
+	<run_depend>dwa_local_planner</run_depend>
+	<run_depend>move_base</run_depend>
+	<run_depend>nav_core</run_depend>
+	<run_depend>robot_pose_ekf</run_depend>
+	<run_depend>base_local_planner</run_depend>
+	<run_depend>clear_costmap_recovery</run_depend>
+	<run_depend>fake_localization</run_depend>
+	<run_depend>global_planner</run_depend>
+	<run_depend>move_base_msgs</run_depend>
+	<run_depend>navfn</run_depend>
+	<run_depend>rotate_recovery</run_depend>
+	<run_depend>costmap_2d</run_depend>
+	<run_depend>map_server</run_depend>
+	<run_depend>move_slow_and_clear</run_depend>
+	<run_depend>voxel_grid</run_depend>
 	<export>
 		<metapackage/>	
 	</export>
