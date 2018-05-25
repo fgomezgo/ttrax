@@ -62,7 +62,6 @@
 
 	<!-- Base Controller -->
     <node name="base_controller" pkg="arania_arco" type="base_controller.py" >
-		<remap from="nose" to="cmd_vel"/>
 	</node>
 
 	<!-- Controller for Rover's Left Side -->
