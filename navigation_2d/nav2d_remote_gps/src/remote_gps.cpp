@@ -54,7 +54,7 @@ double angleBetween(Vector a, Vector b){
 }
 
 
-nav2d_operator::cmd cmd;
+geometry_msgs::Twist cmd;
 
 
 //Publishers
@@ -74,6 +74,12 @@ bool firstTimeInCallback = true;
 
 //Target init
 Target init;
+
+void targetCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
+{
+	target.longitude = msg->longitude;
+	target.latitude = msg->latitude;
+}
 
 void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 {
@@ -95,15 +101,15 @@ void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 	ROS_INFO("Distance %lf", distance);
 	//Threshold to slowdown velocity
 	if(distance > 3)
-		cmd.Velocity = 0.5;
+		cmd.linear.x = 0.5;
 	else
-		cmd.Velocity = 0.16*distance;
+		cmd.linear.x = 0.16*distance;
 	cmd_pub.publish(cmd);
 
 	//End if minError is reached
 	if(distance < 1){
-		cmd.Velocity = 0.0;
-		cmd.Turn = 0.0;
+		cmd.linear.x = 0.0;
+		cmd.angular.z = 0.0;
 		cmd_pub.publish(cmd);
 		endProgram = true;
 	}
@@ -130,7 +136,7 @@ void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 	ROS_INFO("CrossProduct %lf", cP);
 	ROS_INFO("Angle %lf", angle);
 
-	cmd.Turn = (angle)/(PI);
+	cmd.angular.z = (angle)/(PI);
 	ROS_INFO("Turn %lf", double(cmd.Turn));
 
 	cmd_pub.publish(cmd);
@@ -154,9 +160,11 @@ int main(int argc, char** argv)
 	ros::Rate loop_rate(5);	
 
 	//Publishers
-	cmd_pub = nh.advertise<nav2d_operator::cmd>("cmd", 100);
+	cmd_pub = nh.advertise<geometry_msgs::Twist>("cmd_vel", 100);
 	
 	//Subscribers
+	//Target Coordinates (longitude, latitude)
+	ros::Subscriber target_coordinates = nh.subscribe("GPS_goal/target", 10, targetCallback);
 	//Gps data (longitude, latitude)
 	ros::Subscriber sub_gps_data = nh.subscribe("GPS_goal/gps_data", 10, gpsDataCallback);
 	//Gps heading
@@ -165,9 +173,9 @@ int main(int argc, char** argv)
 	ros::Subscriber sub_imu_heading = nh.subscribe("GPS_goal/IMU_heading", 10, gpsImuCallback);
 
 	//Initialize cmd Mode
-	cmd.Mode = 0;
-	cmd.Turn = 0;
-	cmd.Velocity = 0;
+	//cmd.Mode = 0;
+	cmd.angular.z = 0;
+	cmd.linear.x = 0;
 	ROS_INFO("Waiting first callback");
 	ros::spinOnce();
 	//Wait untill first entry
@@ -177,8 +185,10 @@ int main(int argc, char** argv)
 	ROS_INFO("DONE");
 	
 	//Read Goal in Map
+	/*
 	ROS_INFO("Give me the coordinates (longitude, latitude) ");
 	scanf("%lf%lf",&target.longitude,&target.latitude);
+	*/
 
 	while(ros::ok()){
 		if(endProgram){
