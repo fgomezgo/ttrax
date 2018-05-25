@@ -59,10 +59,10 @@ def cmd_velCallback(twist_aux):
 		righ_vel = vel_x + vel_th * width_robot / 2.0
 	#vl = left_vel
 	#vr = right_vel
-	pupr.publish(left_vel*0.6)
-	pupl.publish(right_vel*0.6)
+	pupr.publish(left_vel*0.83)
+	pupl.publish(right_vel*0.83)
 
-#callback de los encoders para saver la velocidad
+#callback de los encoders para saber la velocidad
 def encvelR(vel):
 	vel_enc_right = vel
 def encvelL(vel):
@@ -73,8 +73,8 @@ def realVel():
 	rospy.init_node('base_contol', anonymous=True)
 	r = rospy.Rate(10)	
 	rospy.Subscriber("cmd_vel",Twist,cmd_velCallback)
-	rospy.Subscriber("rover_right/state/data",Float64,encvelR)
-	rospy.Subscriber("rover_left/state/data",Float64,encvelL)
+	#rospy.Subscriber("rover_right/state/data",Float64,encvelR)
+	#rospy.Subscriber("rover_left/state/data",Float64,encvelL)
 	last_time = rospy.get_rostime()
 	while not rospy.is_shutdown():
 		#Commented code. Calculates its odometry of the robot
