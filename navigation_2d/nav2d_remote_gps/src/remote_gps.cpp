@@ -138,7 +138,7 @@ void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 	ROS_INFO("Angle %lf", angle);
 
 	cmd.angular.z = (angle)/(PI);
-	ROS_INFO("Turn %lf", double(cmd.Turn));
+	ROS_INFO("Turn %lf", double(cmd.angular.z));
 
 	cmd_pub.publish(cmd);
 }
