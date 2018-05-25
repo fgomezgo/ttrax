@@ -1,0 +1,18 @@
+<launch>
+    <!-- Start Zed Ros Wrapper -->
+    <include file="$(find zed_wrapper)/launch/zed.launch"/>
+    <!-- Start Depth Image To Laser Scan Node -->
+    <node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan">
+        <remap from="image" to="zed/depth/depth_registered"/>
+        <remap from="camera_info" to="zed/depth/camera_info"/>
+    </node>
+    <!-- Remap zed_depth_camera frame into camera_depth_frame -->
+    <node pkg="tf"
+        type="static_transform_publisher"
+        name="camera_depth_frame_broadcaster"
+        args="0 0 0 0 0 0 /zed_depth_camera camera_depth_frame 100" />
+    <!-- Start Rviz with config file -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find arania_arco)/rviz/config/v1.rviz"/>
+    
+    
+</launch>

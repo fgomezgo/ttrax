@@ -1,0 +1,54 @@
+<launch>
+
+    <!-- Start Zed Ros Wrapper -->
+    <include file="$(find zed_wrapper)/launch/zed.launch"/>
+    <!-- Start Depth Image To Laser Scan Node -->
+    <node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan">
+        <remap from="image" to="zed/depth/depth_registered"/>
+        <remap from="camera_info" to="zed/depth/camera_info"/>
+        <remap from="scan" to="base_scan"/>
+    </node>
+
+    <!-- Remap zed_depth_camera frame into camera_depth_frame -->
+    <node pkg="tf"
+        type="static_transform_publisher"
+        name="camera_depth_frame_broadcaster"
+        args="0 0 0 0 0 0 1 /zed_depth_camera camera_depth_frame 100" />
+    <!-- Start Rviz with config file -->
+    <!--
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find arania_arco)/rviz/config/v1.rviz"/>
+    -->
+
+    <!-- nav2d -->
+    <!-- Some general parameters -->
+	<param name="use_sim_time" value="true" />
+    <rosparam file="$(find nav2d_tutorials)/param/ros.yaml"/>
+
+    <!-- Start Stage simulator with a given environment -->
+	<node name="Stage" pkg="stage_ros" type="stageros" args="$(find nav2d_tutorials)/world/tutorial.world">
+		<param name="base_watchdog_timeout" value="0" />
+	</node>
+
+	<!-- Start the Operator to control the simulated robot -->
+	<node name="Operator" pkg="nav2d_operator" type="operator" >
+		<remap from="scan" to="base_scan"/>
+		<rosparam file="$(find nav2d_tutorials)/param/operator.yaml"/>
+		<rosparam file="$(find nav2d_tutorials)/param/costmap.yaml" ns="local_map" />
+	</node>
+
+	<!-- Start the joystick-driver and remote-controller for operation-->
+    <!--
+	<node name="Joystick" pkg="joy" type="joy_node" />
+    <node name="Remote" pkg="nav2d_remote" type="remote_joy" />
+    -->
+    <node pkg="rostopic" type="rostopic" name="cmd_pub" args="pub /cmd nav2d_operator/cmd 'Velocity: 1.0
+Turn: 0.0
+Mode: 0'" output="screen"/>
+    
+    
+
+
+	<!-- RVIZ to view the visualization -->
+    <node name="RVIZ" pkg="rviz" type="rviz" args=" -d $(find nav2d_tutorials)/param/tutorial1.rviz" /> 
+    
+</launch>

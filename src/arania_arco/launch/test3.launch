@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+
+<launch>
+	
+	<!-- Some general parameters -->
+	<!--<param name="use_sim_time" value="true" />-->
+	<rosparam file="$(find nav2d_tutorials)/param/ros.yaml"/>
+
+	<!--Start Zed with Zed wrapper-->
+	<include file="$(find zed_wrapper)/launch/zed_camera.launch"/>
+
+	<!-- Start Stage simulator with a given environment -->
+	<!--<node name="Stage" pkg="stage_ros" type="stageros" args="$(find nav2d_tutorials)/world/tutorial.world">
+		<param name="base_watchdog_timeout" value="0" />
+	</node>-->
+	
+	<node pkg="tf" type="static_transform_publisher" name="tf_zc2bf" args="0 0 0 0 0 0 1 /zed_center /base_footprint 100"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_bf2bl" args="0 0 0 0 0 0 1 /base_footprint /base_link 100"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_bl2bll" args="0 0 0 0 0 0 1 /base_link /base_laser_link 100"/>	
+	 <node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan">
+        	<remap from="image" to="/depth/depth_registered"/>
+        	<remap from="camera_info" to="/depth/camera_info"/>
+        	<remap from="scan" to="base_scan"/>
+    	</node>
+
+	<node pkg="tf"
+        type="static_transform_publisher"
+        name="camera_depth_frame_broadcaster2"
+        args="0 0 0 0 0 0 1 /zed_center camera_depth_frame 100" />
+
+	<!-- Start the Operator to control the simulated robot -->
+	<node name="Operator" pkg="nav2d_operator" type="operator" >
+		<remap from="scan" to="base_scan"/>
+		<rosparam file="$(find nav2d_tutorials)/param/operator.yaml"/>
+		<rosparam file="$(find nav2d_tutorials)/param/costmap.yaml" ns="local_map" />
+	</node>
+
+	<!-- Start Mapper to genreate map from laser scans -->
+	<node name="Mapper" pkg="nav2d_karto" type="mapper">
+		<remap from="scan" to="base_scan"/>
+		<rosparam file="$(find nav2d_tutorials)/param/mapper.yaml"/>
+	</node>
+
+	<!-- Start the Navigator to move the robot autonomously -->
+	<node name="Navigator" pkg="nav2d_navigator" type="navigator">
+		<rosparam file="$(find nav2d_tutorials)/param/navigator.yaml"/>
+	</node>
+
+	<node name="GetMap" pkg="nav2d_navigator" type="get_map_client" />
+	<node name="Explore" pkg="nav2d_navigator" type="explore_client" />
+	<node name="SetGoal" pkg="nav2d_navigator" type="set_goal_client" />
+
+	<!--TCP CLIENT -->
+	 <node name="TcpClient" pkg="arania_arco" type="TcpClient.py" >
+		<remap from="location_heading" to="GPS_goal/gps_heading"/>
+		<remap from="IMU_heading" to="GPS_goal/IMU_heading"/>
+        <remap from="rover/coordinates" to="GPS_goal/gps_data"/>
+	</node>
+
+    	<node name="base_controller" pkg="arania_arco" type="base_controller.py" >
+		<remap from="nose" to="cmd_vel"/>
+	</node>
+
+	<!-- Controller for drone's X axis -->
+    <node name="controller" pkg="pid" type="controller" ns="drive_system_left" output="screen" >
+      <param name="node_name" value="rover_left_side" />
+      <param name="Kp" value="28.0" />
+      <param name="Ki" value="50.0" />
+      <param name="Kd" value="0.0" />
+      <param name="upper_limit" value="100" />
+      <param name="lower_limit" value="-100" />
+      <param name="windup_limit" value="1" />
+      <param name="cutoff_frequency" value="1" />
+      <param name="diagnostic_period" value="0.25" />
+      <param name="max_loop_frequency" value="7.0" />
+      <param name="min_loop_frequency" value="4.0" />
+     </node>
+    
+     <!-- Controller for drone's Y axis -->
+
+    <node name="controller" pkg="pid" type="controller" ns="drive_system_right" output="screen" >
+      <param name="node_name" value="rover_right_side" />
+      <param name="Kp" value="28.0" />
+      <param name="Ki" value="50.0" />
+      <param name="Kd" value="0.0" />
+      <param name="upper_limit" value="100" />
+      <param name="lower_limit" value="-100" />
+      <param name="windup_limit" value="1" />
+      <param name="cutoff_frequency" value="1" />
+      <param name="diagnostic_period" value="0.25" />
+      <param name="max_loop_frequency" value="7" />
+      <param name="min_loop_frequency" value="4" />
+     </node>
+
+
+
+	<!-- RVIZ to view the visualization -->
+	<node name="RVIZ" pkg="rviz" type="rviz" args=" -d $(find nav2d_tutorials)/param/tutorial3.rviz" />
+
+</launch>
