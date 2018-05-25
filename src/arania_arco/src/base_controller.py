@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
+# Libraries
 import math
 from math import sin, cos, pi
 import numpy as np 
 import roslib
-
 import rospy 
 import tf
 from std_msgs.msg import Float64
@@ -13,6 +13,8 @@ from sensor_msgs.msg import JointState
 from tf import TransformBroadcaster
 from nav_msgs.msg import Odometry
 
+
+# Base Controller Variables
 width_robot = 2
 vr = 0.0
 right_vel = 0.0
@@ -34,7 +36,7 @@ y = 0.0
 th = 0.0
 odom_quat = Quaternion
 
-#Callback para recivir los comandos de velocidad
+#Callback to recieve velocity commands
 def cmd_velCallback(twist_aux):
 	pupr = rospy.Publisher('drive_system_right/setpoint', Float64, queue_size=10)
 	pupl = rospy.Publisher('drive_system_left/setpoint', Float64, queue_size=10)
@@ -70,11 +72,13 @@ def encvelL(vel):
 def realVel():
 	rospy.init_node('base_contol', anonymous=True)
 	r = rospy.Rate(10)	
-	rospy.Subscriber("nose",Twist,cmd_velCallback)
+	rospy.Subscriber("cmd_vel",Twist,cmd_velCallback)
 	rospy.Subscriber("rover_right/state/data",Float64,encvelR)
 	rospy.Subscriber("rover_left/state/data",Float64,encvelL)
 	last_time = rospy.get_rostime()
 	while not rospy.is_shutdown():
+		#Commented code. Calculates its odometry of the robot
+		'''
 		dxy = 0.0 
 		dth = 0.0
 		current_time = rospy.get_rostime()
@@ -105,6 +109,7 @@ def realVel():
 			dth += dth
 		
 		odom_quat = tf.transformations.quaternion_from_euler(0,0,dth)
+		'''
 		
 		r.sleep()
 		rospy.spin()	
