@@ -33,8 +33,8 @@ struct Vector{
 	}
 	//Vector's magnitude
 	double magnitude(){
-		double xGPS = x/GPS_FACTOR*LONG_TO_M;
-		double yGPS = y/GPS_FACTOR*LAT_TO_M;
+		double xGPS = (x/GPS_FACTOR)*LONG_TO_M;
+		double yGPS = (y/GPS_FACTOR)*LAT_TO_M;
 		return sqrt(xGPS*xGPS+yGPS*yGPS);
 		//return sqrt(x*x+y*y);
 	}
@@ -93,7 +93,9 @@ void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 		return;
 	}
 	//Calculate vector between position and target
-	toTarget = Vector(target.longitude-msg->longitude-2*(init.longitude),target.latitude-msg->latitude-2*(init.latitude));
+	//Normalize map
+	//toTarget = Vector(target.longitude-msg->longitude-2*(init.longitude),target.latitude-msg->latitude-2*(init.latitude));
+	toTarget = Vector(target.longitude-msg->longitude,target.latitude-msg->latitude);
 	ROS_INFO("Position x %lf y %lf", msg->longitude, msg->latitude);
 	ROS_INFO("Position in map x %lf y %lf", msg->longitude-init.longitude, msg->latitude-init.latitude);
 	
