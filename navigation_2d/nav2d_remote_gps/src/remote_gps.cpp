@@ -76,17 +76,17 @@ Target init ,target;
 
 //Parameters for gpsDataCallback
 //Percentage Threshold of Max Velocity for Autonomous mode
-double maxVel = 0.8; // 80%
+double maxVel; // default 80%
 //Percentage Threshold of Min Velocity for Autonomous mode
-double minVel = 0.2; // 20%
+double minVel; // default 20%
 //Minimum distance to target at which velocity is kept maximal
-double minDistanceForMaxVel = 3.0; //3 meters
+double minDistanceForMaxVel; // default 3 meters
 //Minimum error in distance to target that is acceptable when reaching a target
-double minDistanceErrorInTarget = 1.0; //1 meters
+double minDistanceErrorInTarget; // default 1 meters
 
 //Parameters for gpsHeadingCallback
 //Minimum angle in radians where it is safe to turn in both directions (Right && Left) 
-double minAngleToTurnInBothDirections = 2.8; //Radians
+double minAngleToTurnInBothDirections; // default 2.8 Radians
 
 void targetCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 {
@@ -122,6 +122,7 @@ void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 	toTarget = Vector(xGPS,yGPS);
 	ROS_INFO("Position :  	%lf %lf", msg->longitude, msg->latitude);
 	ROS_INFO("Target   :  	%lf %lf", target.longitude, target.latitude);
+	ROS_INFO("Coord	   :    %lf %lf", xGPS,yGPS);
 	//ROS_INFO("Position in map ->  %lf %lf", msg->longitude-init.longitude, msg->latitude-init.latitude);
 	
 	//Calculate distance between current position (msg) and target
@@ -191,6 +192,13 @@ int main(int argc, char** argv)
 	
 	//Ros Rate 5Hz
 	ros::Rate loop_rate(5);	
+
+	//Get Parameters
+	nh.param("max_vel",maxVel,0.8);
+	nh.param("min_vel",minVel,0.2);
+	nh.param("min_distance_for_max_vel",minDistanceForMaxVel,3.0);
+	nh.param("min_distance_error_in_target",minDistanceErrorInTarget,1.0);
+	nh.param("min_angle_to_turn_in_both_directions",minAngleToTurnInBothDirections,2.8);
 
 	//Publishers
 	cmd_pub = nh.advertise<geometry_msgs::Twist>("cmd_vel", 100);
