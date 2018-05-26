@@ -8,42 +8,35 @@
 #include <std_msgs/Float64.h>
 #include <sensor_msgs/JointState.h>
 
-//Constants for GPS to m conversion
 //const double LONG_TO_M = 1.7286720451827369;
-const double LONG_TO_M = 1.0436052429987237;
 //const double LAT_TO_M = 1.849419214323556;
+
+//Constants for GPS to m conversion in Tec
+const double LONG_TO_M = 1.0436052429987237;
 const double LAT_TO_M = 1.0392838770711008;
 const double GPS_FACTOR = 0.00001;
-
 
 //Pi
 const double PI = 3.14159265359;
 
 struct Target{
 	double longitude, latitude;
-	Target(){}
-} target;
+	Target(){
+		longitude = latitude = 0.0;
+	}
+};
 
 struct Vector{
 	double x,y;
 	Vector(){}
+	//Constructor
 	Vector(const double &_x, const double &_y){
 		x = _x;
 		y = _y;
 	}
-	//GPS's magnitude
-	double magnitude_gps(){
-		double xGPS = (x/GPS_FACTOR)*LONG_TO_M;
-		double yGPS = (y/GPS_FACTOR)*LAT_TO_M;
-		return sqrt(xGPS*xGPS+yGPS*yGPS);
-		//return sqrt(x*x+y*y);
-	}
 	//Vector's magnitude
 	double magnitude(){
-		//double xGPS = (x/GPS_FACTOR)*LONG_TO_M;
-		//double yGPS = (y/GPS_FACTOR)*LAT_TO_M;
 		return sqrt(x*x+y*y);
-		//return sqrt(x*x+y*y);
 	}
 };
 //Methods for vectors
@@ -58,97 +51,128 @@ double crossProduct(const Vector &a, const Vector &b){
 }
 //Angle between 2 vectors
 double angleBetween(Vector a, Vector b){
-	return acos(dotProduct(a,b)/(a.magnitude_gps()*b.magnitude()));
+	return acos(dotProduct(a,b)/(a.magnitude()*b.magnitude()));
 }
 
 
 geometry_msgs::Twist cmd;
 
-
 //Publishers
 ros::Publisher cmd_pub;
 
 //To calculate cmd's Turn
-
 //Vector formed between current position and target
 Vector toTarget = Vector(1,0);
 Vector toHeading = Vector(1,0);
 
-//Flag to end program
-bool endProgram = false;
+//Flag to indicate thata the current target has been reached
+bool targetReached = false;
 
 //Flag for the first time it enters the gpsDataCallback
 bool firstTimeInCallback = true;
 
-//Target init
-Target init;
+//Init && Target
+Target init ,target;
+
+//Parameters for gpsDataCallback
+//Percentage Threshold of Max Velocity for Autonomous mode
+double maxVel = 0.8; // 80%
+//Percentage Threshold of Min Velocity for Autonomous mode
+double minVel = 0.2; // 20%
+//Minimum distance to target at which velocity is kept maximal
+double minDistanceForMaxVel = 3.0; //3 meters
+//Minimum error in distance to target that is acceptable when reaching a target
+double minDistanceErrorInTarget = 1.0; //1 meters
+
+//Parameters for gpsHeadingCallback
+//Minimum angle in radians where it is safe to turn in both directions (Right && Left) 
+double minAngleToTurnInBothDirections = 2.8; //Radians
 
 void targetCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 {
-	target.longitude = msg->longitude;
-	target.latitude = msg->latitude;
+	//Get GPS Target
+	target.longitude 	= 	msg->longitude;
+	target.latitude 	= 	msg->latitude;
 }
 
 void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 {
+	ROS_INFO("============================ GPS DATA CB ============================");
 	if(firstTimeInCallback){
 		//Add && Printf the current position
-		init.longitude = msg->longitude;
-		init.latitude = msg->latitude;
-		ROS_INFO("The current position is: %lf %lf\n",init.longitude,init.latitude);
+		init.longitude 	= msg->longitude;
+		init.latitude 	= msg->latitude;
+		ROS_INFO("Initial Position : %lf %lf\n",init.longitude,init.latitude);
 		firstTimeInCallback = false;
+		//return;
+	}
+	//Ignore target if is set to 0,0
+	if(target.longitude == 0.0 || target.latitude == 0.0){
+		ROS_INFO("No new target yet defined!");
 		return;
 	}
+
 	//Calculate vector between position and target
 	//toTarget = Vector(target.longitude-msg->longitude-2*(init.longitude),target.latitude-msg->latitude-2*(init.latitude));
-	toTarget = Vector(target.longitude-msg->longitude,target.latitude-msg->latitude);
-	ROS_INFO("Position x %lf y %lf", msg->longitude, msg->latitude);
-	ROS_INFO("Position in map x %lf y %lf", msg->longitude-init.longitude, msg->latitude-init.latitude);
+	double xGPS = target.longitude-msg->longitude;
+	double yGPS = target.latitude-msg->latitude;
+	xGPS = (xGPS/GPS_FACTOR)*LONG_TO_M;
+	yGPS = (yGPS/GPS_FACTOR)*LAT_TO_M;
+
+	toTarget = Vector(xGPS,yGPS);
+	ROS_INFO("Position :  	%lf %lf", msg->longitude, msg->latitude);
+	ROS_INFO("Target   :  	%lf %lf", target.longitude, target.latitude);
+	//ROS_INFO("Position in map ->  %lf %lf", msg->longitude-init.longitude, msg->latitude-init.latitude);
 	
-	//Calculate distance between the 2 points
-	double distance = toTarget.magnitude_gps();
-	ROS_INFO("Distance %lf", distance);
+	//Calculate distance between current position (msg) and target
+	double distance = toTarget.magnitude();
+
+	ROS_INFO("Distance : 	%lf", distance);
 	//Threshold to slowdown velocity
-	if(distance > 3)
-		cmd.linear.x = 0.5;
+	if(distance > minDistanceForMaxVel)
+		cmd.linear.x = maxVel;
 	else
-		cmd.linear.x = 0.16*distance;
+		cmd.linear.x = std::max((maxVel/minDistanceForMaxVel)*distance,minVel);
 	cmd_pub.publish(cmd);
 
 	//End if minError is reached
-	if(distance < 1){
-		cmd.linear.x = 0.0;
-		cmd.angular.z = 0.0;
+	if(distance < minDistanceErrorInTarget){
+		//Stop Rover
+		cmd.linear.x = cmd.angular.z = 0.0;
 		cmd_pub.publish(cmd);
-		endProgram = true;
+		targetReached = true;
 	}
+	ROS_INFO("Velocity :	%lf", cmd.linear.x);
+	ROS_INFO("=====================================================================");
+
 }
 
 void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 {
+	ROS_INFO("============================ HEADING CB ============================");
+	ROS_INFO("Heading	:	 %lf", msg->data);
 	double heading = (msg->data*PI)/180.0;
-	ROS_INFO("Heading %lf", heading);
-	if(heading < 0)
-		heading += 2*PI;
-	ROS_INFO("Heading %lf", heading);
+	ROS_INFO("Heading	:	 %lf", heading);
 	
 	//Calculate angle between heading and toTarget
 	toHeading = Vector(cos(heading),sin(heading));
 	double angle = angleBetween(toTarget,toHeading);
 	double cP = crossProduct(toTarget,toHeading);
-	ROS_INFO("Vector Target x %lf y %lf", toTarget.x, toTarget.y);
-	ROS_INFO("Vector Heading x %lf y %lf", toHeading.x, toHeading.y);
-	if(angle < 1.7){
+
+	ROS_INFO("Vector Target 	: 	x %lf y %lf", toTarget.x, toTarget.y);
+	ROS_INFO("Vector Heading 	:	x %lf y %lf", toHeading.x, toHeading.y);
+	if(angle < minAngleToTurnInBothDirections){
 		if(cP < 0)
 			angle *= -1.0;
 	}
-	ROS_INFO("CrossProduct %lf", cP);
-	ROS_INFO("Angle %lf", angle);
+	ROS_INFO("CrossProduct		:	%lf", cP);
+	ROS_INFO("Angle 			:	%lf", angle);
 
 	cmd.angular.z = (angle)/(PI);
-	ROS_INFO("Turn %lf", double(cmd.angular.z));
+	ROS_INFO("Turn				:	%lf", cmd.angular.z);
 
 	cmd_pub.publish(cmd);
+	ROS_INFO("===================================================================");
 }
 
 void gpsImuCallback(const std_msgs::Float64::ConstPtr& msg)
@@ -185,24 +209,19 @@ int main(int argc, char** argv)
 	//cmd.Mode = 0;
 	cmd.angular.z = 0;
 	cmd.linear.x = 0;
-	ROS_INFO("Waiting first callback");
+	ROS_INFO("Waiting first callback...");
 	ros::spinOnce();
 	//Wait untill first entry
 	while(firstTimeInCallback){
 		ros::spinOnce();
 	}
 	ROS_INFO("DONE");
-	
-	//Read Goal in Map
-	/*
-	ROS_INFO("Give me the coordinates (longitude, latitude) ");
-	scanf("%lf%lf",&target.longitude,&target.latitude);
-	*/
 
 	while(ros::ok()){
-		if(endProgram){
+		if(targetReached){
 			ROS_INFO("Target reached!");
-			return 0;
+			targetReached = false;
+			target.longitude = target.latitude = 0.0;
 		}
 		ros::spinOnce();	
 	}
