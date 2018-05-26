@@ -17,6 +17,9 @@ from nav_msgs.msg import Odometry
 max_vel = 0.65
 max_th = 0.65
 
+#MINIMUM
+min_vel = 0.175
+
 # Base Controller Variables
 width_robot = 0.85
 vr = 0.0
@@ -67,6 +70,18 @@ def cmd_velCallback(twist_aux):
 		left_vel = (left_vel/tot_vel)*max_vel
 	#vl = left_vel
 	#vr = right_vel
+	if left_vel < minVel and left_vel > 0:
+		left_vel = -minVel
+	if left_vel > -minVel and left_vel < 0:
+		left_vel = minVel
+	if right_vel < minVel and right_vel > 0:
+		right_vel = -minVel
+	if right_vel > -minVel and right_vel < 0: 
+		right_vel = minVel
+	
+
+
+
 	pupr.publish(left_vel)
 	pupl.publish(right_vel)
 	print "L:",left_vel,"  R:",right_vel
