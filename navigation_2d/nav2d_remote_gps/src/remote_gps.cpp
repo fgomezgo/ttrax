@@ -15,7 +15,7 @@
 const double LONG_TO_M = 1.0436052429987237;
 const double LAT_TO_M = 1.0392838770711008;
 const double GPS_FACTOR = 0.00001;
-
+const double scale = 100000.0;
 //Pi
 const double PI = 3.14159265359;
 
@@ -150,15 +150,18 @@ void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 
 void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 {
+	if(target.longitude == 0.0 || target.latitude == 0.0){
+	return;
+}
 	ROS_INFO("============================ HEADING CB ============================");
 	ROS_INFO("Heading	:	 %lf", msg->data);
 	double heading = (msg->data*PI)/180.0;
 	ROS_INFO("Heading	:	 %lf", heading);
-	
+	heading -= PI/2.0;
 	//Calculate angle between heading and toTarget
 	toHeading = Vector(cos(heading),sin(heading));
-	double angle = angleBetween(toTarget,toHeading);
-	double cP = crossProduct(toTarget,toHeading);
+	double angle = angleBetween(Vector(toTarget.x*scale,toTarget.y*scale),Vector(toHeading.x*scale,toHeading.y*scale));
+	double cP = crossProduct(Vector(toTarget.x,toTarget.y),Vector(toHeading.x,toHeading.y));
 
 	ROS_INFO("Vector Target 	: 	x %lf y %lf", toTarget.x, toTarget.y);
 	ROS_INFO("Vector Heading 	:	x %lf y %lf", toHeading.x, toHeading.y);
@@ -198,7 +201,7 @@ int main(int argc, char** argv)
 	nh.param("min_vel",minVel,0.2);
 	nh.param("min_distance_for_max_vel",minDistanceForMaxVel,3.0);
 	nh.param("min_distance_error_in_target",minDistanceErrorInTarget,1.0);
-	nh.param("min_angle_to_turn_in_both_directions",minAngleToTurnInBothDirections,2.8);
+	nh.param("min_angle_to_turn_in_both_directions",minAngleToTurnInBothDirections,1.7);
 
 	//Publishers
 	cmd_pub = nh.advertise<geometry_msgs::Twist>("cmd_vel", 100);
