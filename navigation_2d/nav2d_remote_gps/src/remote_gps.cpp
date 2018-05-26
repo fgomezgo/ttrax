@@ -31,11 +31,18 @@ struct Vector{
 		x = _x;
 		y = _y;
 	}
-	//Vector's magnitude
-	double magnitude(){
+	//GPS's magnitude
+	double magnitude_gps(){
 		double xGPS = (x/GPS_FACTOR)*LONG_TO_M;
 		double yGPS = (y/GPS_FACTOR)*LAT_TO_M;
 		return sqrt(xGPS*xGPS+yGPS*yGPS);
+		//return sqrt(x*x+y*y);
+	}
+	//Vector's magnitude
+	double magnitude(){
+		//double xGPS = (x/GPS_FACTOR)*LONG_TO_M;
+		//double yGPS = (y/GPS_FACTOR)*LAT_TO_M;
+		return sqrt(x*x+y*y);
 		//return sqrt(x*x+y*y);
 	}
 };
@@ -51,7 +58,7 @@ double crossProduct(const Vector &a, const Vector &b){
 }
 //Angle between 2 vectors
 double angleBetween(Vector a, Vector b){
-	return acos(dotProduct(a,b)/(a.magnitude()*b.magnitude()));
+	return acos(dotProduct(a,b)/(a.magnitude_gps()*b.magnitude()));
 }
 
 
@@ -93,14 +100,13 @@ void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 		return;
 	}
 	//Calculate vector between position and target
-	//Normalize map
 	//toTarget = Vector(target.longitude-msg->longitude-2*(init.longitude),target.latitude-msg->latitude-2*(init.latitude));
 	toTarget = Vector(target.longitude-msg->longitude,target.latitude-msg->latitude);
 	ROS_INFO("Position x %lf y %lf", msg->longitude, msg->latitude);
 	ROS_INFO("Position in map x %lf y %lf", msg->longitude-init.longitude, msg->latitude-init.latitude);
 	
 	//Calculate distance between the 2 points
-	double distance = toTarget.magnitude();
+	double distance = toTarget.magnitude_gps();
 	ROS_INFO("Distance %lf", distance);
 	//Threshold to slowdown velocity
 	if(distance > 3)
@@ -120,8 +126,8 @@ void gpsDataCallback(const sensor_msgs::NavSatFix::ConstPtr& msg)
 
 void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 {
-	double heading = msg->data;
-	//ROS_INFO("Heading %lf", heading);
+	double heading = (msg->data*PI)/180.0;
+	ROS_INFO("Heading %lf", heading);
 	if(heading < 0)
 		heading += 2*PI;
 	ROS_INFO("Heading %lf", heading);
@@ -148,7 +154,7 @@ void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 void gpsImuCallback(const std_msgs::Float64::ConstPtr& msg)
 {
 	double heading = msg->data;
-	ROS_INFO("IMU Heading %lf", heading);
+	//ROS_INFO("IMU Heading %lf", heading);
 }
 
 int main(int argc, char** argv)
