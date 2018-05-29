@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+	<!--master_fkie-->
+	<node name="master" pkg="master_discovery_fkie" type="master_discovery">
+	</node>
+	
+	<node name="sync" pkg="master_sync_fkie" type="master_sync">
+		<param name="sync_host" value="['fgg-msi']"/>
+		<param name="sync_topics" value="['/joy_bridge]"/>
+	</node>
+
+	<node name="cam" pkg="cv_camera" type="cv_camera_node">
+		<param name="device_id" value="1"/>
+	</node>
+</launch>

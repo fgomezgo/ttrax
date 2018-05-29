@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+	<!--master_fkie-->
+	<node name="master" pkg="master_discovery_fkie" type="master_discovery">
+	</node>
+	
+	<node name="sync" pkg="master_sync_fkie" type="master_sync">
+		<param name="sync_host" value="['tegra-ubuntu']"/>
+		<param name="sync_topics" value="['/cv_camera/image_raw']"/>
+	</node>
+
+	<node name="joy" pkg="arania_arco" type="joy_bridge.py" >
+	</node>
+</launch>
