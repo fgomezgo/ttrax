@@ -8,13 +8,14 @@
 #include <std_msgs/Float64.h>
 #include <sensor_msgs/JointState.h>
 
-//const double LONG_TO_M = 1.7286720451827369;
-//const double LAT_TO_M = 1.849419214323556;
-
 //Constants for GPS to m conversion in Tec
-const double LONG_TO_M = 1.0436052429987237;
-const double LAT_TO_M = 1.0392838770711008;
+//const double LONG_TO_M = 1.0436052429987237;
+//const double LAT_TO_M = 1.0392838770711008;
+//Constants for GPS to m conversion in Las Vegas
+const double LONG_TO_M = 0.8950320145268125;
+const double LAT_TO_M = 1.1104623806596103;
 const double GPS_FACTOR = 0.00001;
+const double scale = 1.0;
 
 //Pi
 const double PI = 3.14159265359;
@@ -153,21 +154,23 @@ void gpsHeadingCallback(const std_msgs::Float64::ConstPtr& msg)
 	ROS_INFO("============================ HEADING CB ============================");
 	ROS_INFO("Heading	:	 %lf", msg->data);
 	double heading = (msg->data*PI)/180.0;
+	heading += PI/2.0;
 	ROS_INFO("Heading	:	 %lf", heading);
 	
 	//Calculate angle between heading and toTarget
 	toHeading = Vector(cos(heading),sin(heading));
-	double angle = angleBetween(toTarget,toHeading);
-	double cP = crossProduct(toTarget,toHeading);
+	double angle = angleBetween(Vector(toTarget.x*scale,toTarget.y*scale),Vector(toHeading.x*scale,toHeading.y*scale));
+	double cP = crossProduct(Vector(toTarget.x*scale,toTarget.y*scale),Vector(toHeading.x*scale,toHeading.y*scale));
 
 	ROS_INFO("Vector Target 	: 	x %lf y %lf", toTarget.x, toTarget.y);
 	ROS_INFO("Vector Heading 	:	x %lf y %lf", toHeading.x, toHeading.y);
+	/*
 	if(angle < minAngleToTurnInBothDirections){
 		if(cP < 0)
 			angle *= -1.0;
-	}
+	}*/
 	ROS_INFO("CrossProduct		:	%lf", cP);
-	ROS_INFO("Angle 			:	%lf", angle);
+	ROS_INFO("Angle 			:	%.8lf", angle);
 
 	cmd.angular.z = (angle)/(PI);
 	ROS_INFO("Turn				:	%lf", cmd.angular.z);
