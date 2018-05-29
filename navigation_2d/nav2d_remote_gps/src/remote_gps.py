@@ -45,8 +45,8 @@ cmd_pub = rospy.Publisher('cmd_vel',Twist,queue_size=10)
 
 #To calculate cmd's Turn
 #Vector formed between current position and target
-toTarget = Vector(1,0)
 toHeading = Vector(1,0)
+toTarget = Vector(5,0)
 
 #Flag to indicate thata the current target has been reached
 targetReached = False
@@ -73,6 +73,7 @@ def targetCallback(msg):
 def gpsDataCallback(msg):
     global firstTimeInCallback
     global toTarget
+
     rospy.loginfo('============================ GPS DATA CB ============================')
     if firstTimeInCallback:
         #Add the current position
@@ -80,10 +81,11 @@ def gpsDataCallback(msg):
         init.latitude = msg.latitude
         rospy.loginfo('Initial Position: '+str(init.longitude)+' '+str(init.latitude))
         firstTimeInCallback = False
-    #Ignore target if is set to 0,
-    if target.longitude == 0 or  target.latitude == 0:
-        rospy.loginfo('No new target yet define!')
+    #Ignore target if is set to 0
+    if target.longitude == 0 and target.latitude == 0:
+        rospy.loginfo('No new target yet defined!')
         return
+
     #Calculate vector between position and target
     xGPS = target.longitude-msg.longitude
     yGPS = target.latitude-msg.latitude
@@ -91,6 +93,7 @@ def gpsDataCallback(msg):
     yGPS = (yGPS/GPS_FACTOR)*LAT_TO_M
 
     toTarget = Vector(xGPS,yGPS)
+
     rospy.loginfo('Position: '+str(msg.longitude)+' '+str(msg.latitude))
     rospy.loginfo('Target:   '+str(target.longitude)+' '+str(target.latitude))
     rospy.loginfo('Coord:    '+str(xGPS)+' '+str(yGPS))
@@ -112,12 +115,19 @@ def gpsDataCallback(msg):
         targetReached = True
     rospy.loginfo('Velocity: '+str(cmd.linear.x))
     rospy.loginfo('=====================================================================')
+
 def gpsHeadingCallback(msg):
+    global toTarget
     rospy.loginfo("============================ HEADING CB ============================")
     rospy.loginfo("Heading:         "+str(msg.data))
     #Tranform heading
     heading = (msg.data*pi)/180.0 + pi/2.0
-    rospy.loginfo("Heading:         "+str(heading))
+    rospy.loginfo("Heading:         "+str(heading*180/pi))
+
+    if target.longitude == 0 and target.latitude == 0:
+        rospy.loginfo('No new target yet defined!')
+        return
+
     #Calculate angle between heading and toTarget
     toHeading = Vector(cos(heading),sin(heading))
     angle = innerAngle(toTarget,toHeading)
@@ -125,14 +135,13 @@ def gpsHeadingCallback(msg):
 
     rospy.loginfo("Vector Target:   "+str(toTarget.x)+' '+str(toTarget.y))
     rospy.loginfo("Vector Heading:  "+str(toHeading.x)+' '+str(toHeading.y))
-    '''
+    
     if angle < minAngleToTurnInBothDirections:
-        if cP < 0:
+        if cP > 0:
             angle *= -1.0
-    }
-    '''
+    
     rospy.loginfo("CrossProduct:    "+str(cP))
-    rospy.loginfo("Angle Target:    "+str(atan2(1,0)*180/pi))
+    rospy.loginfo("Angle Target:    "+str(atan2(toTarget.y,toTarget.x)*180/pi))
     rospy.loginfo("Angle:           "+str(angle*180/pi))
 
     cmd.angular.z = angle/pi
