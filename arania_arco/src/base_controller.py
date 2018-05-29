@@ -70,14 +70,14 @@ def cmd_velCallback(twist_aux):
 		left_vel = (left_vel/tot_vel)*max_vel
 	#vl = left_vel
 	#vr = right_vel
-	if left_vel < minVel and left_vel > 0:
-		left_vel = -minVel
-	if left_vel > -minVel and left_vel < 0:
-		left_vel = minVel
-	if right_vel < minVel and right_vel > 0:
-		right_vel = -minVel
-	if right_vel > -minVel and right_vel < 0: 
-		right_vel = minVel
+	if left_vel < min_vel and left_vel > 0:
+		left_vel = -min_vel
+	if left_vel > -min_vel and left_vel < 0:
+		left_vel = min_vel
+	if right_vel < min_vel and right_vel > 0:
+		right_vel = -min_vel
+	if right_vel > -min_vel and right_vel < 0: 
+		right_vel = min_vel
 	
 
 
