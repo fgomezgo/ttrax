@@ -27,7 +27,7 @@ int main(int argc, char** argv){
     while (node.ok()){
         tf::StampedTransform transform;
         try{
-            listener.lookupTransform("/base_link", "/odom",  
+             listener.lookupTransform("/odom", "/base_link",  
                 ros::Time(0), transform);
             //Publish data from transform
             sensor_msgs::NavSatFix msg_NavSat_Fix;

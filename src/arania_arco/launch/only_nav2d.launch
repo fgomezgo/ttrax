@@ -6,7 +6,7 @@
     <rosparam file="$(find nav2d_tutorials)/param/ros.yaml"/>
 
     <!-- Start Stage simulator with a given environment -->
-	<node name="Stage" pkg="stage_ros" type="stageros" args="$(find nav2d_tutorials)/world/tutorial.world">
+	<node name="Stage" pkg="stage_ros" type="stageros" args="$(find arania_arco)/world/empty.world">
 		<param name="base_watchdog_timeout" value="0" />
 	</node>
 
